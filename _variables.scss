@@ -1,0 +1,59 @@
+// =============================================================================
+// SCSS Variables - Generated from Figma Design System
+// Nomenclature: category-type-state-mode
+// =============================================================================
+
+// =============================================================================
+// COLORS
+// =============================================================================
+
+// Background Colors
+$color-background-default-light: #ffffff;
+$color-background-default-dark: #091c4e;
+$color-text-default-light: #ffffff;
+
+// Gradients
+$gradient-brand-default-light: linear-gradient(
+  36.5814deg, 
+  rgb(138, 236, 221) 0.75995%, 
+  rgb(91, 230, 235) 11.787%, 
+  rgb(0, 222, 252) 22.813%, 
+  rgb(0, 213, 255) 33.84%, 
+  rgb(0, 201, 255) 44.867%, 
+  rgb(45, 185, 255) 55.893%, 
+  rgb(123, 166, 255) 66.92%, 
+  rgb(179, 141, 255) 77.947%, 
+  rgb(223, 111, 244) 88.973%, 
+  rgb(255, 71, 203) 100%
+);
+
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+// Font Families
+$typography-family-display-default: 'Recursive', sans-serif;
+$typography-family-body-default: 'Georgia', serif;
+
+// Font Sizes
+$typography-size-heading-small: 20px;
+$typography-size-heading-medium: 28px;
+$typography-size-heading-large: 40px;
+$typography-size-heading-xlarge: 64px;
+$typography-size-body-default: 16px;
+$typography-size-body-large: 20px;
+$typography-size-section-title: 24px;
+
+// Font Weights
+$typography-weight-regular-default: 400;
+$typography-weight-bold-default: 700;
+$typography-weight-semibold-default: 750;
+$typography-weight-black-default: 900;
+
+// Line Heights
+$typography-lineheight-tight-default: 1.12;
+$typography-lineheight-comfortable-default: 1.2;
+$typography-lineheight-relaxed-default: 1.4;
+$typography-lineheight-loose-default: 1.5;
+
+ 

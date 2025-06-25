@@ -1,0 +1,960 @@
+// Import our design tokens
+@use "variables" as *;
+
+// =============================================================================
+// FONT FACE DECLARATIONS
+// =============================================================================
+
+@font-face {
+  font-family: 'Recursive';
+  src: url('./fonts/Recursive_VF_1.085.woff2') format('woff2-variations');
+  font-weight: 300 1000;
+  font-stretch: normal;
+  font-style: oblique -15deg 0deg;
+  font-display: swap;
+}
+
+// =============================================================================
+// RESET & BASE STYLES
+// =============================================================================
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $typography-family-body-default;
+  background-color: $color-background-default-dark;
+  color: $color-text-default-light;
+  line-height: $typography-lineheight-loose-default;
+}
+
+// Force font loading and variation settings
+.hero-title,
+.section-title,
+.project-title {
+  font-family: "Recursive", Arial, sans-serif !important;
+}
+
+.hero-title {
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -15 !important;
+}
+
+.section-title {
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0 !important;
+}
+
+.project-title {
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -5!important;
+}
+
+.nav-link,
+.logo p {
+  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0 !important;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-position: from-font;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// =============================================================================
+// LAYOUT
+// =============================================================================
+
+.home {
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+// =============================================================================
+// HEADER
+// =============================================================================
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  order: 4;
+  z-index: 100;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(
+      to bottom,
+      rgba(9, 28, 78, 0.9) 0%,
+      rgba(9, 28, 78, 0.7) 50%,
+      rgba(9, 28, 78, 0.3) 80%,
+      transparent 100%
+    );
+    z-index: -1;
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  p {
+    font-family: $typography-family-display-default;
+    font-size: $typography-size-heading-small;
+    font-weight: $typography-weight-regular-default;
+    line-height: $typography-lineheight-comfortable-default;
+    font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0;
+    color: $color-text-default-light;
+    white-space: nowrap;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-link {
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-heading-small;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-comfortable-default;
+  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0;
+  color: $color-text-default-light;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// =============================================================================
+// ANIMATIONS
+// =============================================================================
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+// =============================================================================
+// HERO SECTION
+// =============================================================================
+
+.hero-section {
+  order: 3;
+  width: 100%;
+}
+
+.hero-content {
+  padding: 24px 24px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 976px;
+}
+
+.hero-title {
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-heading-xlarge;
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -2.56px;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  width: fit-content;
+  white-space: nowrap;
+
+
+  // Simplified seamless gradient for animation
+  background: linear-gradient(
+    60deg,
+    #8aecdd 0%,
+    #5be6eb 10%,
+    #00defc 20%,
+    #00d5ff 30%,
+    #00c9ff 40%,
+    #B38DFF 50%,
+    #DF6FF4 55%,
+    #8aecdd 60%,
+    #5be6eb 70%,
+    #00defc 80%,
+    #00d5ff 90%,
+    #00c9ff 100%
+  );
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gradient-flow 5s linear infinite;
+}
+
+.hero-subtitle {
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-heading-medium;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-loose-default;
+  letter-spacing: -0.28px;
+  color: $color-text-default-light;
+}
+
+// =============================================================================
+// PROJECTS SECTION
+// =============================================================================
+
+.projects-section {
+  order: 2;
+  width: 100%;
+  scroll-margin-top: 120px; // Offset for sticky header
+}
+
+.projects-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-title {
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-section-title;
+  font-weight: 900;
+  line-height: 1.4;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  color: $color-text-default-light;
+  max-width: 976px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  // Odd items (1st, 3rd, 5th, etc.) - image on left
+  &:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  // Even items (2nd, 4th, 6th, etc.) - image on right
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.project-image {
+  margin: 0;
+  flex-shrink: 0;
+  width: 476px;
+  height: 312px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 476px;
+  height: 312px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-title {
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-heading-large;
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -1.6px;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+
+  // Gradient text effect matching Figma
+  background: linear-gradient(
+    55.2998deg,
+    rgb(138, 236, 221) 0.75995%,
+    rgb(91, 230, 235) 11.787%,
+    rgb(0, 222, 252) 22.813%,
+    rgb(0, 213, 255) 33.84%,
+    rgb(0, 201, 255) 44.867%,
+    rgb(45, 185, 255) 55.893%,
+    rgb(123, 166, 255) 66.92%,
+    rgb(179, 141, 255) 77.947%,
+    rgb(223, 111, 244) 88.973%,
+    rgb(255, 71, 203) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.project-text {
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-body-large;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-loose-default;
+  letter-spacing: -0.2px;
+  color: $color-text-default-light;
+}
+
+.read-more {
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-body-large;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-loose-default;
+  letter-spacing: -0.2px;
+  color: $color-text-default-light;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// =============================================================================
+// ABOUT SECTION
+// =============================================================================
+
+.about-section {
+  order: 1;
+  width: 100%;
+  scroll-margin-top: 120px; // Offset for sticky header
+}
+
+.about-content {
+  padding: 24px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 976px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.about-text {
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-loose-default;
+  color: $color-text-default-light;
+  flex: 1;
+  max-width: 478px;
+
+  p {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-video {
+  flex: 1;
+  max-width: 478px;
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// =============================================================================
+// PROJECT DETAIL PAGES
+// =============================================================================
+
+.project-detail {
+  min-height: 100vh;
+  position: relative;
+}
+
+.project-hero {
+  order: 3;
+  width: 100%;
+}
+
+.project-hero-content {
+  padding: 96px 24px 48px;
+}
+
+.back-link {
+  margin-bottom: 32px;
+}
+
+.back-button {
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-comfortable-default;
+  color: $color-text-default-light;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 976px;
+}
+
+.project-detail-title {
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-heading-xlarge;
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -2.56px;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  
+  // Gradient text effect matching Figma design
+  background: linear-gradient(
+    36.917deg,
+    rgb(138, 236, 221) 0.75995%,
+    rgb(91, 230, 235) 11.787%,
+    rgb(0, 222, 252) 22.813%,
+    rgb(0, 213, 255) 33.84%,
+    rgb(0, 201, 255) 44.867%,
+    rgb(45, 185, 255) 55.893%,
+    rgb(123, 166, 255) 66.92%,
+    rgb(179, 141, 255) 77.947%,
+    rgb(223, 111, 244) 88.973%,
+    rgb(255, 71, 203) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.project-detail-subtitle {
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-heading-medium;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-loose-default;
+  letter-spacing: -0.28px;
+  color: $color-text-default-light;
+  opacity: 0.8;
+}
+
+.project-content {
+  order: 2;
+  width: 100%;
+  padding: 24px;
+}
+
+.project-image-hero {
+  margin-bottom: 48px;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.project-details {
+  max-width: 976px;
+
+  h2 {
+    font-family: $typography-family-display-default;
+    font-size: $typography-size-heading-large;
+    font-weight: 900;
+    line-height: 1.4;
+    font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+    color: $color-text-default-light;
+    margin-bottom: 16px;
+    margin-top: 48px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    font-family: $typography-family-body-default;
+    font-size: $typography-size-body-default;
+    font-weight: $typography-weight-regular-default;
+    line-height: $typography-lineheight-loose-default;
+    color: $color-text-default-light;
+    margin-bottom: 24px;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-position: from-font;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  ul {
+    font-family: $typography-family-body-default;
+    font-size: $typography-size-body-default;
+    font-weight: $typography-weight-regular-default;
+    line-height: $typography-lineheight-loose-default;
+    color: $color-text-default-light;
+    margin-bottom: 24px;
+    padding-left: 24px;
+
+    li {
+      margin-bottom: 8px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.project-image {
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.info-callout {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 32px 0;
+
+  p {
+    margin-bottom: 0;
+    font-family: $typography-family-body-default;
+    font-size: $typography-size-body-default;
+    font-weight: $typography-weight-regular-default;
+    line-height: $typography-lineheight-loose-default;
+    color: $color-text-default-light;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.quote-container {
+  position: relative;
+  padding: 4px 0 4px 24px;
+  margin: 32px 0;
+
+  // Left border exactly as in Figma
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: $color-text-default-light;
+  }
+
+  p {
+    font-family: $typography-family-body-default;
+    font-size: $typography-size-body-default;
+    font-weight: $typography-weight-regular-default;
+    line-height: $typography-lineheight-loose-default;
+    color: $color-text-default-light;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .quote-author {
+    font-weight: $typography-weight-bold-default;
+  }
+}
+
+.project-navigation {
+  order: 1;
+  width: 100%;
+  padding: 48px 24px;
+}
+
+.nav-container {
+  max-width: 976px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.nav-direction {
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-comfortable-default;
+  color: $color-text-default-light;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.nav-title {
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-heading-medium;
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -0.8px;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  color: $color-text-default-light;
+}
+
+// =============================================================================
+// HAMBURGER MENU
+// =============================================================================
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+
+  .hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: $color-text-default-light;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover .hamburger-line {
+    opacity: 0.7;
+  }
+}
+
+.mobile-menu-overlay {
+  font-family: $typography-family-display-default;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 28, 78, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 24px;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+
+  .mobile-menu-overlay.active & {
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .logo p {
+    margin: 0;
+    font-family: $typography-family-display-default;
+    font-size: $typography-size-body-default;
+    font-weight: $typography-weight-regular-default;
+    color: $color-text-default-light;
+  }
+}
+
+.close-menu {
+  background: transparent;
+  border: none;
+  color: $color-text-default-light;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-nav-link {
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-heading-medium;
+  font-weight: $typography-weight-regular-default;
+  line-height: $typography-lineheight-comfortable-default;
+  color: $color-text-default-light;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// =============================================================================
+// RESPONSIVE DESIGN
+// =============================================================================
+
+@media (max-width: 1024px) {
+  .main-container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .mobile-menu-overlay {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .header-content {
+    padding: 16px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+    white-space: normal;
+  }
+
+  .project-card {
+    flex-direction: column !important;
+    gap: 32px;
+
+    // Override nth-child rules on mobile - all items stack vertically
+    &:nth-child(odd),
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+
+  .project-image,
+  .project-info {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    gap: 16px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .about-text,
+  .about-video {
+    width: 100%;
+    max-width: none;
+  }
+
+  // Project detail responsive
+  .project-hero-content {
+    padding: 48px 0px 32px;
+  }
+
+  .project-detail-title {
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+
+  .project-navigation {
+    padding: 32px 16px;
+  }
+
+  .quote-container {
+    padding: 4px 0 4px 16px;
+  }
+
+  .project-content {
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 16px;
+  }
+
+  .hero-content {
+    padding: 48px 0;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    letter-spacing: -1.44px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .projects-container {
+    gap: 32px;
+  }
+  .projects-content{
+    padding: 32px 0;
+  }
+  .about-content{
+    padding: 0;
+  }
+
+  .quote-container {
+    padding: 4px 0 4px 16px;
+  }
+
+  .project-content {
+    padding: 16px 0;
+  }
+
+  .project-details h2 {
+    margin-bottom: 16px;
+  }
+
+  .project-details ul li {
+    margin-bottom: 16px;
+    padding-left: 16px;
+  }
+}
