@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating and Coding a Figma plugin used by 5.7k designers - Marcelo Brasileiro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="project-detail">
         <!-- Header -->
         <header class="header">
-                <div class="header-content">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none;">
+                        <p>Marcelo Brasileiro</p>
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                    <a href="index.html#about" class="nav-link">About me</a>
+                    <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer"
+                        class="nav-link">Linkedin⬀</a>
+                    <a href="mailto:marcelo.brasileiro@gmail.com" class="nav-link">Email⬀</a>
+                </nav>
+                <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu">
+                <div class="mobile-menu-header">
                     <div class="logo">
                         <a href="index.html" style="text-decoration: none;">
                             <p>Marcelo Brasileiro</p>
                         </a>
                     </div>
-                    <nav class="navigation">
-                        <a href="index.html#projects" class="nav-link">Projects</a>
-                        <a href="index.html#about" class="nav-link">About me</a>
-                        <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer" class="nav-link">Linkedin⬀</a>
-                        <a href="mailto:marcelo.brasileiro@gmail.com" class="nav-link">Email⬀</a>
-                    </nav>
-                    <button class="hamburger-menu" aria-label="Toggle navigation menu">
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                    </button>
+                    <button class="close-menu" aria-label="Close navigation menu">×</button>
                 </div>
-            </header>
-
-            <!-- Mobile Menu Overlay -->
-            <div class="mobile-menu-overlay">
-                <div class="mobile-menu">
-                    <div class="mobile-menu-header">
-                        <div class="logo">
-                            <a href="index.html" style="text-decoration: none;">
-                                <p>Marcelo Brasileiro</p>
-                            </a>
-                        </div>
-                        <button class="close-menu" aria-label="Close navigation menu">×</button>
-                    </div>
-                    <nav class="mobile-navigation">
-                        <a href="index.html#projects" class="mobile-nav-link">Projects</a>
-                        <a href="index.html#about" class="mobile-nav-link">About me</a>
-                        <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">Linkedin⬀</a>
-                        <a href="mailto:marcelo.brasileiro@gmail.com" class="mobile-nav-link">Email⬀</a>
-                    </nav>
-                </div>
+                <nav class="mobile-navigation">
+                    <a href="index.html#projects" class="mobile-nav-link">Projects</a>
+                    <a href="index.html#about" class="mobile-nav-link">About me</a>
+                    <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer"
+                        class="mobile-nav-link">Linkedin⬀</a>
+                    <a href="mailto:marcelo.brasileiro@gmail.com" class="mobile-nav-link">Email⬀</a>
+                </nav>
             </div>
+        </div>
 
         <div class="main-container">
             <!-- Project Hero -->
@@ -59,7 +63,8 @@
                     </div>
                     <div class="project-header">
                         <h1 class="project-detail-title">Creating and Coding a Figma plugin used by 5.7k designers</h1>
-                        <p class="project-detail-subtitle">A self-initiated project that turned a manual design task into a one-click solution — now helping thousands of Figma users.</p>
+                        <p class="project-detail-subtitle">A self-initiated project that turned a manual design task
+                            into a one-click solution — now helping thousands of Figma users.</p>
                     </div>
                 </div>
             </section>
@@ -69,60 +74,76 @@
                 <div class="content-container">
                     <div class="project-details">
                         <h2>The problem in a nutshell</h2>
-                        <p>In 2020, I noticed a recurring pain point while designing in Figma: adjusting text layers to meet optimal line length standards was frustratingly manual and error-prone. So I built <a href="https://www.figma.com/community/plugin/875546357676392881/line-length">Line Length</a>, a free Figma plugin that automatically resizes text layers based on a target character count per line.</p>
-                        
-                        <div class="project-image">
-                            <img src="images/figma-plugin.png" alt="Figma Plugin Interface showing Line Length tool">
-                        </div>
-                        
-                        <div class="project-image">
-                            <img src="images/figma-plugin.png" alt="Before and after comparison of text layout optimization">
-                        </div>
-                        
-                        <div class="info-callout">
-                            <p>Good line length makes text easier to read. If lines are too short, reading feels choppy. If they're too long, your eyes get lost trying to find the next line. Since each font behaves differently, we measure line length in characters, not pixels. The ideal range is usually <a href="https://practicaltypography.com/line-length.html">45–90 characters per line</a>.</p>
-                        </div>
-                        
-                        <h2>Impact</h2>
-                        <p>Since launch, Line Length has been used by over 5,700 designers and received 118+ likes in the Figma Community.</p>
-                        <p>To better understand user satisfaction, I ran a survey:</p>
-                        <ul>
-                            <li>44% of users gave it a 10/10 likelihood of recommending it to others</li>
-                            <li>The majority rated it 7 or above, indicating strong positive sentiment</li>
-                            <li>Users frequently mentioned time savings and improved readability. The traditional process takes anything between 20-50 seconds and with my plugin users can do it all in Figma in just a click</li>
-                        </ul>
-                        
-                        <h2>My approach</h2>
-                        <p>Despite having only a basic grasp of JavaScript at the time, I dove into the Figma plugin documentation and leaned on community support and developer friends.</p>
-                        <p>The first working version allowed users to:</p>
-                        <ul>
-                            <li>Enter a target character count per line (e.g., 65)</li>
-                            <li>Automatically resize the selected text layer based on that value</li>
-                        </ul>
-                        <p>Later updates included:</p>
-                        <ul>
-                            <li>A feature to show the current average line length of a selected text box</li>
-                            <li>A cleaner, more intuitive UI</li>
-                            <li>A lightweight feedback system</li>
-                        </ul>
-                        
-                        <h2>What users have said about it</h2>
-                        <p>This is a life saver Marcelo - saving me much needed time on my designs! @scottvezina</p>
-                        <p>Great! (It's one of my favorite plugins :) @tonybolero</p>
-                        
+                        <p>In 2020, I noticed a recurring pain point while designing in Figma: adjusting text layers to
+                            meet optimal line length standards was frustratingly manual and error-prone. So I built <a
+                                href="https://www.figma.com/community/plugin/875546357676392881/line-length">Line
+                                Length</a>, a free Figma plugin that automatically resizes text layers based on a target
+                            character count per line.</p>
+
+                            
+                            <div class="project-video">
+                                <iframe src="https://www.youtube.com/embed/eHPEMJu89XI"
+                                title="line length demo" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            
+                            <div class="info-callout">
+                                <p>Good line length makes text easier to read. If lines are too short, reading feels choppy.
+                                    If they're too long, your eyes get lost trying to find the next line. Since each font
+                                    behaves differently, we measure line length in characters, not pixels. The ideal range
+                                    is usually <a href="https://practicaltypography.com/line-length.html">45–90 characters
+                                        per line</a>.</p>
+                                    </div>
+                                    
+                                    <h2>Impact</h2>
+                                    <p>Since launch, Line Length has been used by over 5,700 designers and received 118+ likes in
+                                        the Figma Community.</p>
+                                        <p>To better understand user satisfaction, I ran a survey:</p>
+                                        
+                                        <div class="project-image">
+                                            <img src="images/project-details/creating-and-coding-a-figma-plugin-used-by-5.7k-designers/02.png"
+                                            alt="Before and after comparison of text layout optimization">
+                                        </div>
+                                        <ul>
+                                            <li>44% of users gave it a 10/10 likelihood of recommending it to others</li>
+                                            <li>The majority rated it 7 or above, indicating strong positive sentiment</li>
+                                            <li>Users frequently mentioned time savings and improved readability. The traditional
+                                                process takes anything between 20-50 seconds and with my plugin users can do it all in
+                                                Figma in just a click</li>
+                                            </ul>
+                                            
+                                            <h2>My approach</h2>
+                                            <p>Despite having only a basic grasp of JavaScript at the time, I dove into the Figma plugin
+                                                documentation and leaned on community support and developer friends.</p>
+                                                <p>The first working version allowed users to:</p>
+                                                <ul>
+                                                    <li>Enter a target character count per line (e.g., 65)</li>
+                                                    <li>Automatically resize the selected text layer based on that value</li>
+                                                </ul>
+                                                <p>Later updates included:</p>
+                                                <ul>
+                                                    <li>A feature to show the current average line length of a selected text box</li>
+                                                    <li>A cleaner, more intuitive UI</li>
+                                                    <li>A lightweight feedback system</li>
+                                                </ul>
+                                                
+                                                <h2>What users have said about it</h2>
+                                                <p>This is a life saver Marcelo - saving me much needed time on my designs! @scottvezina</p>
+                                                <p>Great! (It's one of my favorite plugins :) @tonybolero</p>
+                                               
+
                         <h2>Learnings</h2>
                         <ul>
-                            <li>You don't need to be an expert developer to ship useful tools — persistence and documentation go a long way</li>
+                            <li>You don't need to be an expert developer to ship useful tools — persistence and
+                                documentation go a long way</li>
                             <li>Small plugins can solve big problems when they address a real need</li>
-                            <li>Publishing something for the community builds connections and validates your thinking as a product-minded designer</li>
+                            <li>Publishing something for the community builds connections and validates your thinking as
+                                a product-minded designer</li>
                         </ul>
-                        
+
                         <div class="project-image">
-                            <img src="images/figma-plugin.png" alt="User feedback and ratings chart">
-                        </div>
-                        
-                        <div class="project-image">
-                            <img src="images/figma-plugin.png" alt="Plugin usage analytics and impact visualization">
+                            <img src="images/project-details/creating-and-coding-a-figma-plugin-used-by-5.7k-designers/03.png" alt="User feedback and ratings chart">
                         </div>
                     </div>
                 </div>
@@ -184,4 +205,5 @@
         });
     </script>
 </body>
-</html> 
+
+</html>
