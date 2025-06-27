@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designing for Complexity: Galley's Enterprise Menu Planner - Marcelo Brasileiro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="project-detail">
         <!-- Header -->
         <header class="header">
-                <div class="header-content">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none;">
+                        <p>Marcelo Brasileiro</p>
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                    <a href="index.html#about" class="nav-link">About me</a>
+                    <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer"
+                        class="nav-link">Linkedin⬀</a>
+                    <a href="mailto:marcelo.brasileiro@gmail.com" class="nav-link">Email⬀</a>
+                </nav>
+                <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu">
+                <div class="mobile-menu-header">
                     <div class="logo">
                         <a href="index.html" style="text-decoration: none;">
                             <p>Marcelo Brasileiro</p>
                         </a>
                     </div>
-                    <nav class="navigation">
-                        <a href="index.html#projects" class="nav-link">Projects</a>
-                        <a href="index.html#about" class="nav-link">About me</a>
-                        <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer" class="nav-link">Linkedin⬀</a>
-                        <a href="mailto:marcelo.brasileiro@gmail.com" class="nav-link">Email⬀</a>
-                    </nav>
-                    <button class="hamburger-menu" aria-label="Toggle navigation menu">
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                    </button>
+                    <button class="close-menu" aria-label="Close navigation menu">×</button>
                 </div>
-            </header>
-
-            <!-- Mobile Menu Overlay -->
-            <div class="mobile-menu-overlay">
-                <div class="mobile-menu">
-                    <div class="mobile-menu-header">
-                        <div class="logo">
-                            <a href="index.html" style="text-decoration: none;">
-                                <p>Marcelo Brasileiro</p>
-                            </a>
-                        </div>
-                        <button class="close-menu" aria-label="Close navigation menu">×</button>
-                    </div>
-                    <nav class="mobile-navigation">
-                        <a href="index.html#projects" class="mobile-nav-link">Projects</a>
-                        <a href="index.html#about" class="mobile-nav-link">About me</a>
-                        <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">Linkedin⬀</a>
-                        <a href="mailto:marcelo.brasileiro@gmail.com" class="mobile-nav-link">Email⬀</a>
-                    </nav>
-                </div>
+                <nav class="mobile-navigation">
+                    <a href="index.html#projects" class="mobile-nav-link">Projects</a>
+                    <a href="index.html#about" class="mobile-nav-link">About me</a>
+                    <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer"
+                        class="mobile-nav-link">Linkedin⬀</a>
+                    <a href="mailto:marcelo.brasileiro@gmail.com" class="mobile-nav-link">Email⬀</a>
+                </nav>
             </div>
+        </div>
 
         <div class="main-container">
             <!-- Project Hero -->
@@ -59,7 +63,8 @@
                     </div>
                     <div class="project-header">
                         <h1 class="project-detail-title">Designing for Complexity: Galley's Enterprise Menu Planner</h1>
-                        <p class="project-detail-subtitle">Designed a flexible, data-driven menu planner that helps chefs save time, reduce errors, and scale their operations.</p>
+                        <p class="project-detail-subtitle">Designed a flexible, data-driven menu planner that helps
+                            chefs save time, reduce errors, and scale their operations.</p>
                     </div>
                 </div>
             </section>
@@ -69,82 +74,107 @@
                 <div class="content-container">
                     <div class="project-details">
                         <h2>The problem in a nutshell</h2>
-                        <p>In 2023, I joined Galley, an ERP platform for the food industry, as a UX designer. One of my first major initiatives was to design a menu planning experience that would replace spreadsheets and paper-based workflows in commercial kitchens.</p>
-                        <p>Menu planning is a critical — and highly complex — task for chefs. It affects not only the nutritional quality of meals but also costs, allergen compliance, prep time, and customer satisfaction. Most professionals plan manually, juggling multiple variables with limited tools:</p>
-                        
+                        <p>In 2023, I joined Galley, an ERP platform for the food industry, as a UX designer. One of my
+                            first major initiatives was to design a menu planning experience that would replace
+                            spreadsheets and paper-based workflows in commercial kitchens.</p>
+                        <p>Menu planning is a critical — and highly complex — task for chefs. It affects not only the
+                            nutritional quality of meals but also costs, allergen compliance, prep time, and customer
+                            satisfaction. Most professionals plan manually, juggling multiple variables with limited
+                            tools:</p>
+
                         <div class="project-image">
-                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/04.png" alt="Traditional menu planning with spreadsheets and paper">
+                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/04.png"
+                                alt="Traditional menu planning with spreadsheets and paper">
                         </div>
-                        
-                        <p>Our goal was to create a calendar-like, data-aware planning tool that could streamline this task while honoring its complexity.</p>
-                        
+
+                        <p>Our goal was to create a calendar-like, data-aware planning tool that could streamline this
+                            task while honoring its complexity.</p>
+
                         <h2>Impact</h2>
-                        <p>In 2024, we launched the Menu Planner as a core module in Galley's SaaS offering. It enabled chefs and corporate teams to:</p>
+                        <p>In 2024, we launched the Menu Planner as a <b>core module</b> in Galley's SaaS offering. It enabled
+                            chefs and corporate teams to:</p>
                         <ul>
                             <li>Reduce planning time</li>
                             <li>Access cost and allergen data in context</li>
                             <li>Customize menus for different locations and audiences</li>
                             <li>Scale plans efficiently across programs</li>
                         </ul>
+                        <div class="project-image">
+                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/01.png"
+                                alt="Menu Planner calendar interface with drag and drop functionality">
+                        </div>
                         <p>This quote from a corporate chef captured its real-world impact:</p>
-                        
+
                         <div class="quote-container">
-                            <p>"I'm just lovin' the new Menu Planner!!! … [It helps us] generate new, exciting menu cycles & customize them to our communities… Much easier insight into how frequently users are updating/truly customizing their menu."</p>
+                            <p>"I'm just lovin' the new Menu Planner!!! … [It helps us] generate new, exciting menu
+                                cycles & customize them to our communities… Much easier insight into how frequently
+                                users are updating/truly customizing their menu."</p>
                             <p class="quote-author"><strong>Corporate Chef Denise Simmons</strong></p>
                         </div>
-                        
+
+
+
                         <h2>My approach</h2>
                         <p><strong>Discovery</strong></p>
-                        <p>Working with my PM Anelise, we interviewed culinary professionals and discovered a wide range of needs:</p>
+                        <p>Working with my PM, we interviewed chefs and culinary directors to understand how they
+                            planned menus and what challenges they faced using digital tools. A few core needs
+                            consistently surfaced:</p>
                         <ul>
-                            <li>Planning across dayparts and cycles</li>
-                            <li>Budget and nutrition constraints</li>
-                            <li>Allergen avoidance</li>
-                            <li>Reuse and scaling of existing dishes, recipes, and collections</li>
+                            <li>Using existing data already in Galley (recipes, collections, ingredients) to streamline
+                                planning</li>
+                            <li>Staying within budget, with real-time visibility into cost per day or cycle</li>
+                            <li>Clearly labeling allergens to meet compliance and safety standards</li>
+                            <li>Tracking frequency of use for specific ingredients and recipes — so teams could ensure
+                                variety and avoid repetition</li>
+                            <li>Planning in cycles, most commonly over 28-day periods, to support recurring programs and
+                                streamline reuse</li>
                         </ul>
-                        <p>The core insight: menu planning is part creativity, part constraint optimization. It's a skill developed over years — and most digital tools ignore that nuance.</p>
-                        
-                        <p><strong>Design Strategy</strong></p>
-                        <p>We envisioned a calendar-based interface that prioritized:</p>
-                        <ul>
-                            <li>Speed and reuse (via drag-and-drop components, templates, and recipe collections)</li>
-                            <li>Contextual intelligence (costs, allergens, yield units directly visible)</li>
-                            <li>Scalability (menus that could adapt from Monday-Friday lunch programs to full-service campus dining)</li>
-                        </ul>
-                        
-                        <p><strong>Iteration</strong></p>
-                        <p>We prototyped multiple flows and tested them with chefs and culinary directors. Key adjustments included:</p>
-                        <ul>
-                            <li>Allowing users to toggle between quantities by unit, portion, or bulk</li>
-                            <li>Designing a flexible system for creating, saving, and reusing menu cycles</li>
-                            <li>Building in subtle UI cues to guide frequency, variety, and balance without being prescriptive</li>
-                        </ul>
-                        
+                        <video autoplay loop muted playsinline>
+                            <source
+                                src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/highlight-recipe.webm"
+                                type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="project-image">
-                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/01.png" alt="Menu Planner calendar interface with drag and drop functionality">
+                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/03.png"
+                                alt="Menu planning workflow showing contextual data">
+                        </div>
+
+                        <div class="project-video">
                         </div>
                         <div class="project-image">
-                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/02.png" alt="Menu Planner calendar interface with drag and drop functionality">
+                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/05.png"
+                                alt="Menu Planner calendar interface with drag and drop functionality">
                         </div>
-                        
-                        <div class="project-image">
-                            <img src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/03.png" alt="Menu planning workflow showing contextual data">
+                        <div class="project-video">
+                            <video autoplay loop muted playsinline>
+                                <source
+                                    src="images/project-details/designing-for-complexity_-galleys-enterprise-menu-planner/allergens-iconography.webm"
+                                    type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        
                         <h2>What users have said about it</h2>
-                        <p>The Menu Planner has been embraced across culinary teams for making a once tedious, fragmented workflow faster, more collaborative, and more insightful — from the kitchen to the executive level.</p>
-                        
+                        <p>The Menu Planner has been embraced across culinary teams for making a once tedious,
+                            fragmented workflow faster, more collaborative, and more insightful — from the kitchen to
+                            the executive level.</p>
+
                         <div class="quote-container">
-                            <p>"I'm just lovin' the new Menu Planner!!! It's helping us generate new, exciting menu cycles and customize them to our communities — way easier insight into how frequently users are updating/truly customizing their menu."</p>
+                            <p>"I'm just lovin' the new Menu Planner!!! It's helping us generate new, exciting menu
+                                cycles and customize them to our communities — way easier insight into how frequently
+                                users are updating/truly customizing their menu."</p>
                             <p class="quote-author"><strong>Denise Simmons</strong></p>
                         </div>
-                        
+
                         <div class="quote-container">
-                            <p>"Galley has transformed our menu planning processes and made it possible to improve production efficiency, mitigate inflationary pressures, and foster culinary collaboration across the company."</p>
+                            <p>"Galley has transformed our menu planning processes and made it possible to improve
+                                production efficiency, mitigate inflationary pressures, and foster culinary
+                                collaboration across the company."</p>
                             <p class="quote-author"><strong>Derek Carbonneau</strong></p>
                         </div>
-                        
-                        <p>These quotes reflect not just usability wins, but real business outcomes — improved operations, better planning decisions, and stronger alignment between teams.</p>
+
+                        <p>These quotes reflect not just usability wins, but real business outcomes — improved
+                            operations, better planning decisions, and stronger alignment between teams.</p>
                     </div>
                 </div>
             </section>
@@ -152,7 +182,8 @@
             <!-- Navigation to other projects -->
             <section class="project-navigation">
                 <div class="nav-container">
-                    <a href="bringing-structure-to-flavor-reframing-a-popular-cooking-app.html" class="project-nav-link">
+                    <a href="bringing-structure-to-flavor-reframing-a-popular-cooking-app.html"
+                        class="project-nav-link">
                         <span class="nav-direction">Next project</span>
                         <span class="nav-title">Cooking App Reframe</span>
                     </a>
@@ -205,4 +236,5 @@
         });
     </script>
 </body>
-</html> 
+
+</html>

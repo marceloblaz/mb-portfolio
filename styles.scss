@@ -297,7 +297,8 @@ img {
   }
 }
 
-.project-image {
+// For index page project previews (50/50 layout)
+.project-image-preview {
   margin: 0;
   flex-shrink: 0;
   width: 476px;
@@ -589,8 +590,9 @@ img {
   }
 }
 
+// For detail page images (full width)
 .project-image {
-  //width: 100%;
+  width: 100%;
   margin: 32px 0;
   align-self: stretch;
 
@@ -617,6 +619,13 @@ img {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border: none;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -890,9 +899,9 @@ img {
     }
   }
 
-  .project-image,
+  .project-image-preview,
   .project-info {
-    //width: 100%;
+    width: 100%;
     height: auto;
     align-self: stretch;
   }
@@ -914,7 +923,7 @@ img {
 
   // Project detail responsive
   .project-hero-content {
-    padding: 48px 0px 32px;
+    padding: 48px 16px 32px;
   }
 
   .project-detail-title {
@@ -931,7 +940,7 @@ img {
   }
 
   .project-content {
-    padding: 16px 0;
+    padding: 16px;
   }
 
 
@@ -943,7 +952,7 @@ img {
   }
 
   .hero-content {
-    padding: 48px 0;
+    padding: 32px 16px;
   }
 
   .hero-title {
@@ -953,16 +962,29 @@ img {
 
   .hero-subtitle {
     font-size: 20px;
+    letter-spacing: -0.2px;
   }
 
   .projects-container {
-    gap: 32px;
+    gap: 48px;
   }
+  
   .projects-content{
-    padding: 32px 0;
+    padding: 32px 16px;
   }
+  
+  .project-title {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+  }
+
+  .project-text {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+  }
+  
   .about-content{
-    padding: 0;
+    padding: 16px;
   }
 
   .quote-container {
@@ -970,15 +992,101 @@ img {
   }
 
   .project-content {
-    padding: 16px 0;
+    padding: 16px;
+  }
+
+  .project-hero-content {
+    padding: 32px 16px 24px;
+  }
+
+  .project-detail-title {
+    font-size: 36px;
+    letter-spacing: -1.44px;
   }
 
   .project-details h2 {
+    font-size: 28px;
+    letter-spacing: -1.12px;
     margin-bottom: 16px;
   }
 
   .project-details ul li {
     margin-bottom: 16px;
     padding-left: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 0;
+  }
+
+  .header-content {
+    padding: 12px 16px;
+  }
+
+  .hero-content {
+    padding: 24px 16px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    letter-spacing: -1.28px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+  }
+
+  .projects-content {
+    padding: 24px 16px;
+  }
+
+  .projects-container {
+    gap: 40px;
+  }
+
+  .project-card {
+    gap: 20px;
+  }
+
+  .project-title {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+    line-height: 1.2;
+  }
+
+  .project-text {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+    line-height: 1.4;
+  }
+
+  .read-more {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+  }
+
+  .about-content {
+    padding: 16px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .project-hero-content {
+    padding: 24px 16px 20px;
+  }
+
+  .project-detail-title {
+    font-size: 32px;
+    letter-spacing: -1.28px;
+  }
+
+  .project-details h2 {
+    font-size: 24px;
+    letter-spacing: -0.96px;
   }
 }
