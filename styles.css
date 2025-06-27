@@ -823,6 +823,10 @@ img {
     font-size: 36px;
     letter-spacing: -1.44px;
   }
+  .project-detail-subtitle {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+  }
   .project-details h2 {
     font-size: 28px;
     letter-spacing: -1.12px;
@@ -886,6 +890,10 @@ img {
   .project-detail-title {
     font-size: 32px;
     letter-spacing: -1.28px;
+  }
+  .project-detail-subtitle {
+    font-size: 16px;
+    letter-spacing: -0.16px;
   }
   .project-details h2 {
     font-size: 24px;
