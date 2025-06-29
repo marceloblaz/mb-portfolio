@@ -273,6 +273,19 @@ img {
   color: transparent;
 }
 
+.project-title-link {
+  text-decoration: none !important;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+.project-title-link:hover {
+  opacity: 0.9;
+  text-decoration: none !important;
+}
+.project-title-link .project-title {
+  margin: 0;
+}
+
 .project-text {
   font-family: "Georgia", serif;
   font-size: 20px;

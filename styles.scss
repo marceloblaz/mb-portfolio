@@ -354,6 +354,22 @@ img {
   color: transparent;
 }
 
+.project-title-link {
+  text-decoration: none !important;
+  display: block;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+    text-decoration: none !important;
+  }
+
+  // Ensure the title inside the link maintains its styles
+  .project-title {
+    margin: 0;
+  }
+}
+
 .project-text {
   font-family: $typography-family-body-default;
   font-size: $typography-size-body-large;
