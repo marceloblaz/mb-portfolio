@@ -357,7 +357,7 @@ img {
 }
 
 .project-hero-content {
-  padding: 96px 24px 48px;
+  padding: 96px 24px 24px;
 }
 
 .back-link {
@@ -762,7 +762,7 @@ img {
     max-width: none;
   }
   .project-hero-content {
-    padding: 48px 16px 32px;
+    padding: 48px 16px 16px;
   }
   .project-detail-title {
     font-size: 48px;
