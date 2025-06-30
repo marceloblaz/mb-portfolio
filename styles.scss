@@ -1,6 +1,9 @@
 // Import our design tokens
 @use "variables" as *;
 
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 // =============================================================================
 // FONT FACE DECLARATIONS
 // =============================================================================
@@ -138,11 +141,10 @@ img {
 
 .logo {
   p {
-    font-family: $typography-family-display-default;
-    font-size: $typography-size-heading-small;
-    font-weight: $typography-weight-regular-default;
-    line-height: $typography-lineheight-comfortable-default;
-    font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0;
+    font-family: $typography-navlink-family;
+    font-size: $typography-navlink-size;
+    font-weight: $typography-navlink-weight;
+    line-height: $typography-navlink-lineheight;
     color: $color-text-default-light;
     white-space: nowrap;
   }
@@ -155,11 +157,10 @@ img {
 }
 
 .nav-link {
-  font-family: $typography-family-display-default;
-  font-size: $typography-size-heading-small;
-  font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-comfortable-default;
-  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0;
+  font-family: $typography-navlink-family;
+  font-size: $typography-navlink-size;
+  font-weight: $typography-navlink-weight;
+  line-height: $typography-navlink-lineheight;
   color: $color-text-default-light;
   white-space: nowrap;
   text-decoration: none;
@@ -193,7 +194,7 @@ img {
 }
 
 .hero-content {
-  padding: 24px 24px;
+  padding: 40px 24px;
 }
 
 .text-container {
@@ -204,10 +205,10 @@ img {
 }
 
 .hero-title {
-  font-family: $typography-family-display-default;
-  font-size: $typography-size-heading-xlarge;
-  font-weight: 750;
-  line-height: 1.12;
+  font-family: $typography-h1-family;
+  font-size: $typography-h1-size;
+  font-weight: $typography-h1-weight;
+  line-height: $typography-h1-lineheight;
   letter-spacing: -2.56px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
   width: fit-content;
@@ -239,10 +240,10 @@ img {
 }
 
 .hero-subtitle {
-  font-family: $typography-family-body-default;
-  font-size: $typography-size-heading-medium;
-  font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  font-family: $typography-subtitle-family;
+  font-size: $typography-subtitle-size;
+  font-weight: $typography-subtitle-weight;
+  line-height: $typography-subtitle-lineheight;
   letter-spacing: -0.28px;
   color: $color-text-default-light;
 }
@@ -258,17 +259,17 @@ img {
 }
 
 .projects-content {
-  padding: 24px;
   display: flex;
+  padding: 56px 24px;
   flex-direction: column;
   gap: 24px;
 }
 
 .section-title {
-  font-family: $typography-family-display-default;
-  font-size: $typography-size-section-title;
-  font-weight: 900;
-  line-height: 1.4;
+  font-family: $typography-h6-family;
+  font-size: $typography-h6-size;
+  font-weight: $typography-h6-weight;
+  line-height: $typography-h6-lineheight;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
   color: $color-text-default-light;
   max-width: 976px;
@@ -277,7 +278,7 @@ img {
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 128px;
 }
 
 .project-card {
@@ -327,10 +328,10 @@ img {
 }
 
 .project-title {
-  font-family: $typography-family-display-default;
-  font-size: $typography-size-heading-large;
-  font-weight: 750;
-  line-height: 1.12;
+  font-family: $typography-h2-family;
+  font-size: $typography-h2-size;
+  font-weight: $typography-h2-weight;
+  line-height: $typography-h2-lineheight;
   letter-spacing: -1.6px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
 
@@ -371,11 +372,10 @@ img {
 }
 
 .project-text {
-  font-family: $typography-family-body-default;
-  font-size: $typography-size-body-large;
-  font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
-  letter-spacing: -0.2px;
+  font-family: $typography-body-lg-family;
+  font-size: $typography-body-lg-size;
+  font-weight: $typography-body-lg-weight;
+  line-height: $typography-body-lg-lineheight;
   color: $color-text-default-light;
 }
 
@@ -384,7 +384,6 @@ img {
   font-size: $typography-size-body-large;
   font-weight: $typography-weight-regular-default;
   line-height: $typography-lineheight-loose-default;
-  letter-spacing: -0.2px;
   color: $color-text-default-light;
 
   &:hover {
@@ -421,10 +420,10 @@ img {
 }
 
 .about-text {
-  font-family: $typography-family-body-default;
-  font-size: $typography-size-body-default;
-  font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  font-family: $typography-body-family;
+  font-size: $typography-body-size;
+  font-weight: $typography-body-weight;
+  line-height: $typography-body-lineheight;
   color: $color-text-default-light;
   flex: 1;
   max-width: 478px;
@@ -496,10 +495,10 @@ img {
 }
 
 .project-detail-title {
-  font-family: $typography-family-display-default;
-  font-size: $typography-size-heading-xlarge;
-  font-weight: 750;
-  line-height: 1.12;
+  font-family: $typography-h1-family;
+  font-size: $typography-h1-size;
+  font-weight: $typography-h1-weight;
+  line-height: $typography-h1-lineheight;
   letter-spacing: -2.56px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
   
@@ -524,11 +523,10 @@ img {
 }
 
 .project-detail-subtitle {
-  font-family: $typography-family-body-default;
-  font-size: $typography-size-heading-medium;
-  font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
-  letter-spacing: -0.28px;
+  font-family: $typography-subtitle-family;
+  font-size: $typography-subtitle-size;
+  font-weight: $typography-subtitle-weight;
+  line-height: $typography-subtitle-lineheight;
   color: $color-text-default-light;
   opacity: 0.8;
 }
@@ -744,7 +742,6 @@ img {
   font-size: $typography-size-heading-medium;
   font-weight: 750;
   line-height: 1.12;
-  letter-spacing: -0.8px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
   color: $color-text-default-light;
 }
@@ -859,10 +856,10 @@ img {
 }
 
 .mobile-nav-link {
-  font-family: $typography-family-display-default;
-  font-size: $typography-size-heading-medium;
-  font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-comfortable-default;
+  font-family: $typography-subtitle-family;
+  font-size: $typography-subtitle-size;
+  font-weight: $typography-subtitle-weight;
+  line-height: $typography-subtitle-lineheight;
   color: $color-text-default-light;
   text-decoration: none;
   transition: opacity 0.2s ease;

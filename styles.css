@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 @font-face {
   font-family: "Recursive";
   src: url("./fonts/Recursive_VF_1.085.woff2") format("woff2-variations");
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Serif", serif;
   background-color: #091c4e;
   color: #ffffff;
   line-height: 1.5;
@@ -109,11 +110,10 @@ img {
 }
 
 .logo p {
-  font-family: "Recursive", sans-serif;
+  font-family: "Roboto Serif", serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
-  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0;
   color: #ffffff;
   white-space: nowrap;
 }
@@ -125,11 +125,10 @@ img {
 }
 
 .nav-link {
-  font-family: "Recursive", sans-serif;
+  font-family: "Roboto Serif", serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
-  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0;
   color: #ffffff;
   white-space: nowrap;
   text-decoration: none;
@@ -153,7 +152,7 @@ img {
 }
 
 .hero-content {
-  padding: 24px 24px;
+  padding: 40px 24px;
 }
 
 .text-container {
@@ -182,7 +181,7 @@ img {
 }
 
 .hero-subtitle {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Serif", serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 1.5;
@@ -197,8 +196,8 @@ img {
 }
 
 .projects-content {
-  padding: 24px;
   display: flex;
+  padding: 56px 24px;
   flex-direction: column;
   gap: 24px;
 }
@@ -216,7 +215,7 @@ img {
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 128px;
 }
 
 .project-card {
@@ -287,20 +286,18 @@ img {
 }
 
 .project-text {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Serif", serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -0.2px;
   color: #ffffff;
 }
 
 .read-more {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Serif", serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -0.2px;
   color: #ffffff;
 }
 .read-more:hover {
@@ -332,8 +329,8 @@ img {
 }
 
 .about-text {
-  font-family: "Georgia", serif;
-  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
@@ -378,8 +375,8 @@ img {
 }
 
 .back-button {
-  font-family: "Georgia", serif;
-  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
   color: #ffffff;
@@ -413,11 +410,10 @@ img {
 }
 
 .project-detail-subtitle {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Serif", serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -0.28px;
   color: #ffffff;
   opacity: 0.8;
 }
@@ -455,8 +451,8 @@ img {
   margin-top: 0;
 }
 .project-details p {
-  font-family: "Georgia", serif;
-  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
@@ -471,8 +467,8 @@ img {
   opacity: 0.8;
 }
 .project-details ul {
-  font-family: "Georgia", serif;
-  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
@@ -529,8 +525,8 @@ img {
 }
 .info-callout p {
   margin-bottom: 0;
-  font-family: "Georgia", serif;
-  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
@@ -558,8 +554,8 @@ img {
   background-color: #ffffff;
 }
 .quote-container p {
-  font-family: "Georgia", serif;
-  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
@@ -596,8 +592,8 @@ img {
 }
 
 .nav-direction {
-  font-family: "Georgia", serif;
-  font-size: 16px;
+  font-family: "Roboto Serif", serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
   color: #ffffff;
@@ -610,7 +606,6 @@ img {
   font-size: 28px;
   font-weight: 750;
   line-height: 1.12;
-  letter-spacing: -0.8px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
   color: #ffffff;
 }
@@ -684,7 +679,7 @@ img {
 .mobile-menu-header .logo p {
   margin: 0;
   font-family: "Recursive", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #ffffff;
 }
@@ -715,10 +710,10 @@ img {
 }
 
 .mobile-nav-link {
-  font-family: "Recursive", sans-serif;
+  font-family: "Roboto Serif", serif;
   font-size: 28px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #ffffff;
   text-decoration: none;
   transition: opacity 0.2s ease;
