@@ -31,7 +31,7 @@ body {
 }
 
 .hero-title {
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -15 !important;
+  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0, "slnt" 0 !important;
 }
 
 .section-title {
@@ -163,12 +163,13 @@ img {
 }
 
 .hero-title {
+  
   font-family: "Recursive", sans-serif;
   font-size: 64px;
-  font-weight: 750;
+  font-weight: 300;
   line-height: 1.12;
   letter-spacing: -2.56px;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0, "SLNT" 0;
   width: fit-content;
   white-space: nowrap;
   background: linear-gradient(60deg, #8aecdd 0%, #5be6eb 10%, #00defc 20%, #00d5ff 30%, #00c9ff 40%, #B38DFF 50%, #DF6FF4 55%, #8aecdd 60%, #5be6eb 70%, #00defc 80%, #00d5ff 90%, #00c9ff 100%);
@@ -182,7 +183,7 @@ img {
 
 .hero-subtitle {
   font-family: "Roboto Serif", serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.28px;
@@ -261,7 +262,7 @@ img {
 .project-title {
   font-family: "Recursive", sans-serif;
   font-size: 40px;
-  font-weight: 750;
+  font-weight: 500;
   line-height: 1.12;
   letter-spacing: -1.6px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
