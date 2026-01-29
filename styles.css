@@ -27,11 +27,13 @@ body {
 .hero-title,
 .section-title,
 .project-title {
-  font-family: "Recursive", Arial, sans-serif !important;
+  font-family: "Recursive", Arial, sans-serif;
+  font-feature-settings: 'salt' on, 'rclt' off;
+  font-variation-settings: 'CASL' 0, 'CRSV' 0.5, 'MONO' 0, 'slnt' -5;
 }
 
 .hero-title {
-  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0, "slnt" 0 !important;
+  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0, "slnt" -5;
 }
 
 .section-title {
@@ -166,10 +168,10 @@ img {
   
   font-family: "Recursive", sans-serif;
   font-size: 64px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.12;
-  letter-spacing: -2.56px;
-  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0, "SLNT" 0;
+  letter-spacing: -3px;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -5;
   width: fit-content;
   white-space: nowrap;
   background: linear-gradient(60deg, #8aecdd 0%, #5be6eb 10%, #00defc 20%, #00d5ff 30%, #00c9ff 40%, #B38DFF 50%, #DF6FF4 55%, #8aecdd 60%, #5be6eb 70%, #00defc 80%, #00d5ff 90%, #00c9ff 100%);
@@ -183,10 +185,10 @@ img {
 
 .hero-subtitle {
   font-family: "Roboto Serif", serif;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+
   color: #ffffff;
 }
 
@@ -208,7 +210,7 @@ img {
   font-size: 24px;
   font-weight: 750;
   line-height: 1.4;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
   color: #ffffff;
   max-width: 976px;
 }
@@ -265,7 +267,7 @@ img {
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -1.6px;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
   background: linear-gradient(55.2998deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -399,10 +401,10 @@ img {
 .project-detail-title {
   font-family: "Recursive", sans-serif;
   font-size: 64px;
-  font-weight: 750;
+  font-weight: 500;
   line-height: 1.12;
   letter-spacing: -2.56px;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -5 !important;
   background: linear-gradient(36.917deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -441,9 +443,9 @@ img {
 .project-details h2 {
   font-family: "Recursive", sans-serif;
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 750;
   line-height: 1.4;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
   color: #ffffff;
   margin-bottom: 16px;
   margin-top: 48px;
@@ -607,7 +609,7 @@ img {
   font-size: 28px;
   font-weight: 750;
   line-height: 1.12;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -15;
+  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
   color: #ffffff;
 }
 
@@ -799,7 +801,7 @@ img {
     letter-spacing: -1.44px;
   }
   .hero-subtitle {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: -0.2px;
   }
   .projects-container {
