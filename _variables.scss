@@ -9,7 +9,8 @@
 
 // Background Colors
 $color-background-default-light: #ffffff;
-$color-background-default-dark: #091c4e;
+$color-background-default-dark: #041325;
+$color-background-default-dark-50: #04132568;
 $color-text-default-light: #ffffff;
 
 // Gradients
@@ -45,13 +46,13 @@ $typography-size-body-large: 20px;
 $typography-size-section-title: 24px;
 
 // Font Weights
-$typography-weight-regular-default: 400;
+$typography-weight-regular-default: 300;
 $typography-weight-bold-default: 700;
 $typography-weight-semibold-default: 750;
 $typography-weight-black-default: 900;
 
 // Line Heights
-$typography-lineheight-tight-default: 1.12;
+$typography-lineheight-tight-default: 1.1;
 $typography-lineheight-comfortable-default: 1.2;
 $typography-lineheight-relaxed-default: 1.4;
 $typography-lineheight-loose-default: 1.5;

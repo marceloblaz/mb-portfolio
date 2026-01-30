@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Roboto Serif", serif;
-  background-color: #091c4e;
+  background-color: #041325;
   color: #ffffff;
   line-height: 1.5;
 }
@@ -28,8 +28,8 @@ body {
 .section-title,
 .project-title {
   font-family: "Recursive", Arial, sans-serif;
-  font-feature-settings: 'salt' on, 'rclt' off;
-  font-variation-settings: 'CASL' 0, 'CRSV' 0.5, 'MONO' 0, 'slnt' -5;
+  font-feature-settings: "salt" on, "rclt" off;
+  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0, "slnt" -5;
 }
 
 .hero-title {
@@ -89,6 +89,7 @@ img {
   order: 4;
   z-index: 100;
 }
+
 .header::before {
   content: "";
   position: absolute;
@@ -97,7 +98,7 @@ img {
   right: 0;
   bottom: 0;
   backdrop-filter: blur(10px);
-  background: linear-gradient(to bottom, rgba(9, 28, 78, 0.9) 0%, rgba(9, 28, 78, 0.7) 50%, rgba(9, 28, 78, 0.3) 80%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(4, 19, 37, 0.4078431373) 0%, rgba(4, 19, 37, 0.4078431373) 50%, rgba(4, 19, 37, 0.4078431373) 70%, transparent 100%);
   z-index: -1;
 }
 
@@ -136,6 +137,7 @@ img {
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
+
 .nav-link:hover {
   opacity: 0.8;
 }
@@ -165,7 +167,6 @@ img {
 }
 
 .hero-title {
-  
   font-family: "Recursive", sans-serif;
   font-size: 64px;
   font-weight: 500;
@@ -188,7 +189,6 @@ img {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
-
   color: #ffffff;
 }
 
@@ -227,9 +227,11 @@ img {
   justify-content: space-between;
   gap: 24px;
 }
+
 .project-card:nth-child(odd) {
   flex-direction: row;
 }
+
 .project-card:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -240,6 +242,7 @@ img {
   width: 476px;
   height: auto;
 }
+
 .project-image-preview img {
   width: 100%;
   height: 100%;
@@ -268,11 +271,7 @@ img {
   line-height: 1.12;
   letter-spacing: -1.6px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
-  background: linear-gradient(55.2998deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: white;
 }
 
 .project-title-link {
@@ -280,10 +279,12 @@ img {
   display: block;
   transition: opacity 0.2s ease;
 }
+
 .project-title-link:hover {
   opacity: 0.9;
   text-decoration: none !important;
 }
+
 .project-title-link .project-title {
   margin: 0;
 }
@@ -294,6 +295,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
+  opacity: 0.8;
 }
 
 .read-more {
@@ -303,6 +305,7 @@ img {
   line-height: 1.5;
   color: #ffffff;
 }
+
 .read-more:hover {
   opacity: 0.8;
 }
@@ -334,15 +337,17 @@ img {
 .about-text {
   font-family: "Roboto Serif", serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: #ffffff;
   flex: 1;
   max-width: 478px;
 }
+
 .about-text p {
   margin-bottom: 24px;
 }
+
 .about-text p:last-child {
   margin-bottom: 0;
 }
@@ -351,6 +356,7 @@ img {
   flex: 1;
   max-width: 478px;
 }
+
 .about-video iframe {
   width: 100%;
   height: auto;
@@ -387,6 +393,7 @@ img {
   opacity: 0.8;
   transition: opacity 0.2s ease;
 }
+
 .back-button:hover {
   opacity: 1;
 }
@@ -402,8 +409,8 @@ img {
   font-family: "Recursive", sans-serif;
   font-size: 64px;
   font-weight: 500;
-  line-height: 1.12;
-  letter-spacing: -2.56px;
+  line-height: 1.1;
+  letter-spacing: -3.5px;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -5 !important;
   background: linear-gradient(36.917deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
   background-clip: text;
@@ -414,11 +421,10 @@ img {
 
 .project-detail-subtitle {
   font-family: "Roboto Serif", serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
-  opacity: 0.8;
 }
 
 .project-content {
@@ -430,6 +436,7 @@ img {
 .project-image-hero {
   margin-bottom: 48px;
 }
+
 .project-image-hero img {
   width: 100%;
   height: auto;
@@ -440,6 +447,7 @@ img {
 .project-details {
   max-width: 976px;
 }
+
 .project-details h2 {
   font-family: "Recursive", sans-serif;
   font-size: 40px;
@@ -450,9 +458,11 @@ img {
   margin-bottom: 16px;
   margin-top: 48px;
 }
+
 .project-details h2:first-child {
   margin-top: 0;
 }
+
 .project-details p {
   font-family: "Roboto Serif", serif;
   font-size: 18px;
@@ -460,15 +470,19 @@ img {
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 24px;
+  opacity: 0.8;
 }
+
 .project-details p a {
   color: inherit;
   text-decoration: underline;
   text-underline-position: from-font;
 }
+
 .project-details p a:hover {
   opacity: 0.8;
 }
+
 .project-details ul {
   font-family: "Roboto Serif", serif;
   font-size: 18px;
@@ -477,10 +491,13 @@ img {
   color: #ffffff;
   margin-bottom: 24px;
   padding-left: 24px;
+  opacity: 0.8;
 }
+
 .project-details ul li {
   margin-bottom: 8px;
 }
+
 .project-details ul li:last-child {
   margin-bottom: 0;
 }
@@ -490,12 +507,14 @@ img {
   margin: 32px 0;
   align-self: stretch;
 }
+
 .project-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
 .project-image .detail {
   width: 100%;
 }
@@ -504,6 +523,7 @@ img {
   width: 100%;
   margin: 32px 0;
 }
+
 .project-video iframe {
   width: 100%;
   height: auto;
@@ -512,6 +532,7 @@ img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   border: none;
 }
+
 .project-video video {
   width: 100%;
   height: auto;
@@ -526,6 +547,7 @@ img {
   padding: 16px;
   margin: 32px 0;
 }
+
 .info-callout p {
   margin-bottom: 0;
   font-family: "Roboto Serif", serif;
@@ -534,10 +556,12 @@ img {
   line-height: 1.5;
   color: #ffffff;
 }
+
 .info-callout p a {
   color: inherit;
   text-decoration: none;
 }
+
 .info-callout p a:hover {
   opacity: 0.8;
 }
@@ -547,6 +571,7 @@ img {
   padding: 4px 0 4px 24px;
   margin: 32px 0;
 }
+
 .quote-container::before {
   content: "";
   position: absolute;
@@ -556,6 +581,7 @@ img {
   width: 4px;
   background-color: #ffffff;
 }
+
 .quote-container p {
   font-family: "Roboto Serif", serif;
   font-size: 18px;
@@ -564,9 +590,11 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
+
 .quote-container p:last-child {
   margin-bottom: 0;
 }
+
 .quote-container .quote-author {
   font-weight: 700;
 }
@@ -590,6 +618,7 @@ img {
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
+
 .project-nav-link:hover {
   opacity: 0.8;
 }
@@ -625,6 +654,7 @@ img {
   padding: 0;
   z-index: 1001;
 }
+
 .hamburger-menu .hamburger-line {
   width: 100%;
   height: 2px;
@@ -632,6 +662,7 @@ img {
   border-radius: 1px;
   transition: all 0.3s ease;
 }
+
 .hamburger-menu:hover .hamburger-line {
   opacity: 0.7;
 }
@@ -651,6 +682,7 @@ img {
   visibility: hidden;
   transition: all 0.3s ease;
 }
+
 .mobile-menu-overlay.active {
   opacity: 1;
   visibility: visible;
@@ -667,6 +699,7 @@ img {
   transform: translateY(-100%);
   transition: transform 0.3s ease;
 }
+
 .mobile-menu-overlay.active .mobile-menu {
   transform: translateY(0);
 }
@@ -679,6 +712,7 @@ img {
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .mobile-menu-header .logo p {
   margin: 0;
   font-family: "Recursive", sans-serif;
@@ -702,6 +736,7 @@ img {
   justify-content: center;
   transition: opacity 0.2s ease;
 }
+
 .close-menu:hover {
   opacity: 0.7;
 }
@@ -721,6 +756,7 @@ img {
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
+
 .mobile-nav-link:hover {
   opacity: 0.7;
 }
@@ -817,6 +853,7 @@ img {
   .project-text {
     font-size: 18px;
     letter-spacing: -0.18px;
+    opacity: 0.8;
   }
   .about-content {
     padding: 16px;
@@ -884,6 +921,7 @@ img {
     font-size: 16px;
     letter-spacing: -0.16px;
     line-height: 1.4;
+    opacity: 0.8;
   }
   .read-more {
     font-size: 16px;
