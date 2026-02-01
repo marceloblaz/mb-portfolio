@@ -168,7 +168,7 @@ img {
 
 .hero-title {
   font-family: "Recursive", sans-serif;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -3px;
@@ -407,7 +407,7 @@ img {
 
 .project-detail-title {
   font-family: "Recursive", sans-serif;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -3.5px;

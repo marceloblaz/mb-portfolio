@@ -21,8 +21,8 @@ html {
 
 body {
   font-family: $typography-family-body-default;
-  background-color: $color-background-default-dark;
-  color: $color-text-default-light;
+  background-color: $color-background-page-dark;
+  color: $color-text-primary-on-dark;
   line-height: $typography-lineheight-loose-default;
 }
 
@@ -99,7 +99,7 @@ img {
   right: 0;
   bottom: 0;
   backdrop-filter: blur(10px);
-  background: linear-gradient(to bottom, $color-background-default-dark-50 0%, $color-background-default-dark-50 50%, $color-background-default-dark-50 70%, transparent 100%);
+  background: linear-gradient(to bottom, $color-background-page-dark-50 0%, $color-background-page-dark-50 50%, $color-background-page-dark-50 70%, transparent 100%);
   z-index: -1;
 }
 
@@ -118,7 +118,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   white-space: nowrap;
 }
 
@@ -133,7 +133,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   white-space: nowrap;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -169,7 +169,7 @@ img {
 .hero-title {
   
   font-family: "Recursive", sans-serif;
-  font-size: 64px;
+  font-size: $typography-size-heading-xlarge;
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -3px;
@@ -191,7 +191,7 @@ img {
   font-weight: 300;
   line-height: $typography-lineheight-loose-default;
 
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
 }
 
 .projects-section {
@@ -213,7 +213,7 @@ img {
   font-weight: 750;
   line-height: 1.4;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   max-width: 976px;
 }
 
@@ -295,7 +295,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   opacity: 0.8;
 }
 
@@ -304,7 +304,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
 }
 .read-more:hover {
   opacity: 0.8;
@@ -339,7 +339,7 @@ img {
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   flex: 1;
   max-width: 478px;
 }
@@ -385,7 +385,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s ease;
@@ -420,7 +420,7 @@ img {
   font-size: 22px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
 }
 
 .project-content {
@@ -448,7 +448,7 @@ img {
   font-weight: 750;
   line-height: 1.4;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   margin-bottom: 16px;
   margin-top: 48px;
 }
@@ -460,7 +460,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   margin-bottom: 24px;
   opacity: 0.8;
 }
@@ -477,7 +477,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   margin-bottom: 24px;
   padding-left: 24px;
   opacity: 0.8;
@@ -536,7 +536,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
 }
 .info-callout p a {
   color: inherit;
@@ -558,14 +558,14 @@ img {
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: $color-text-default-light;
+  background-color: $color-text-primary-on-dark;
 }
 .quote-container p {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   margin-bottom: 16px;
 }
 .quote-container p:last-child {
@@ -603,7 +603,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   opacity: 0.6;
   margin-bottom: 4px;
 }
@@ -614,7 +614,7 @@ img {
   font-weight: 750;
   line-height: 1.12;
   font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
 }
 
 .hamburger-menu {
@@ -632,7 +632,7 @@ img {
 .hamburger-menu .hamburger-line {
   width: 100%;
   height: 2px;
-  background-color: $color-text-default-light;
+  background-color: $color-text-primary-on-dark;
   border-radius: 1px;
   transition: all 0.3s ease;
 }
@@ -688,13 +688,13 @@ img {
   font-family: "Recursive", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
 }
 
 .close-menu {
   background: transparent;
   border: none;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   font-size: 32px;
   line-height: 1;
   cursor: pointer;
@@ -721,7 +721,7 @@ img {
   font-size: 28px;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
-  color: $color-text-default-light;
+  color: $color-text-primary-on-dark;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }

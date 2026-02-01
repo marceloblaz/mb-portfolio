@@ -1,19 +1,32 @@
 // =============================================================================
-// SCSS Variables - Generated from Figma Design System
-// Nomenclature: category-type-state-mode
+// Design Tokens (SCSS) — Aligned with Design Tokens Format Module
+// https://www.designtokens.org/tr/drafts/format/
+//
+// Nomenclature: category-subcategory-variant (no { } . in names per spec)
+// Groups: color, typography (primitive tokens → semantic/component tokens)
 // =============================================================================
 
 // =============================================================================
-// COLORS
+// COLOR — Primitive palette & semantic aliases
 // =============================================================================
+// $description: Primitive palette for backgrounds and text; semantic aliases
+// let components use intent (e.g. primary, page) instead of raw palette.
 
-// Background Colors
-$color-background-default-light: #ffffff;
-$color-background-default-dark: #041325;
-$color-background-default-dark-50: #04132568;
-$color-text-default-light: #ffffff;
+// Background (primitive)
+$white: #ffffff;
+$darkblue: #041325;
+$darkblue-50: #04132568;
 
-// Gradients
+// Semantic color aliases — use these in components for intent-based styling
+$color-background-page-light: $white;
+$color-background-page-dark: $darkblue;
+$color-background-page-dark-50: $darkblue-50;
+$color-text-primary-on-dark: $white;
+
+// Gradient (presentational; spec composite type = stops + positions)
+// $description: Brand gradient for hero/sections; define stop colors as tokens
+// for single source of truth if needed.
+// =============================================================================
 $gradient-brand-default-light: linear-gradient(
   36.5814deg, 
   rgb(138, 236, 221) 0.75995%, 
@@ -29,73 +42,43 @@ $gradient-brand-default-light: linear-gradient(
 );
 
 // =============================================================================
-// TYPOGRAPHY
+// TYPOGRAPHY — Primitives (spec: fontFamily, dimension, fontWeight, etc.)
 // =============================================================================
+// $description: Base type scale, weights, and line heights; composite tokens
+// below reference these. Dimensions provided in px and rem for scalability.
 
 // Font Families
 $typography-family-display-default: 'Recursive', sans-serif;
 $typography-family-body-default: 'Roboto Serif', serif;
 
-// Font Sizes
-$typography-size-heading-small: 20px;
-$typography-size-heading-medium: 28px;
-$typography-size-heading-large: 40px;
-$typography-size-heading-xlarge: 64px;
-$typography-size-body-default: 18px;
-$typography-size-body-large: 20px;
-$typography-size-section-title: 24px;
+// Base size for rem scale (spec: rem = multiple of root font size)
+$typography-base-size: 16px;
 
-// Font Weights
+
+// Font Sizes — rem (for scalable layouts; 1rem = $typography-base-size)
+$typography-size-heading-small: 1.25rem;   // 20px
+$typography-size-heading-medium: 1.75rem;   // 28px
+$typography-size-heading-large: 2.5rem;    // 40px
+$typography-size-heading-xlarge: 4rem;     // 64px
+$typography-size-body-default: 1.125rem;   // 18px
+$typography-size-body-large: 1.25rem;      // 20px
+$typography-size-section-title: 1.5rem;   // 24px
+
+// Font Weights (spec: 1–1000; 750 intentional per design)
 $typography-weight-regular-default: 300;
+$typography-weight-normal-default: 400;
 $typography-weight-bold-default: 700;
 $typography-weight-semibold-default: 750;
 $typography-weight-black-default: 900;
 
-// Line Heights
+// Line Heights (spec: number, multiplier of fontSize)
 $typography-lineheight-tight-default: 1.1;
 $typography-lineheight-comfortable-default: 1.2;
 $typography-lineheight-relaxed-default: 1.4;
 $typography-lineheight-loose-default: 1.5;
 
-// =============================================================================
-// SPECIFIC TYPOGRAPHY TOKENS (From Figma)
-// =============================================================================
-
-// Heading tokens
-$typography-h1-family: $typography-family-display-default;
-$typography-h1-size: 64px;
-$typography-h1-weight: 750;
-$typography-h1-lineheight: 1.12;
-
-$typography-h2-family: $typography-family-display-default;
-$typography-h2-size: 40px;
-$typography-h2-weight: 750;
-$typography-h2-lineheight: 1.12;
-
-$typography-h6-family: $typography-family-display-default;
-$typography-h6-size: 24px;
-$typography-h6-weight: 750;
-$typography-h6-lineheight: 1.4;
-
-// Body tokens
-$typography-subtitle-family: $typography-family-body-default;
-$typography-subtitle-size: 28px;
-$typography-subtitle-weight: 400;
-$typography-subtitle-lineheight: 1.5;
-
-$typography-navlink-family: $typography-family-body-default;
-$typography-navlink-size: 20px;
-$typography-navlink-weight: 400;
-$typography-navlink-lineheight: 1.2;
-
-$typography-body-lg-family: $typography-family-body-default;
-$typography-body-lg-size: 20px;
-$typography-body-lg-weight: 400;
-$typography-body-lg-lineheight: 1.5;
-
-$typography-body-family: $typography-family-body-default;
-$typography-body-size: 18px;
-$typography-body-weight: 400;
-$typography-body-lineheight: 1.5;
-
- 
+// Letter Spacing (spec typography composite: dimension)
+$typography-letterspacing-none: 0;
+$typography-letterspacing-tight: -0.02em;
+$typography-letterspacing-default: 0;
+$typography-letterspacing-wide: 0.05em;
