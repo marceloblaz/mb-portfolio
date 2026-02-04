@@ -1,13 +1,5 @@
 @use "variables" as *;
 
-@font-face {
-  font-family: "Recursive";
-  src: url("./fonts/Recursive_VF_1.085.woff2") format("woff2-variations");
-  font-weight: 300 1000;
-  font-stretch: normal;
-  font-style: oblique -15deg 0deg;
-  font-display: swap;
-}
 * {
   margin: 0;
   padding: 0;
@@ -28,24 +20,7 @@ body {
 .hero-title,
 .section-title,
 .project-title {
-  font-family: "Recursive", Arial, sans-serif;
-  font-feature-settings: 'salt' on, 'rclt' off;
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
-}
-
-
-
-.section-title {
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
-}
-
-.project-title {
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
-}
-
-.nav-link,
-.logo p {
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
+  font-family: $typography-family-display-default;
 }
 
 button {
@@ -164,22 +139,17 @@ img {
 }
 
 .hero-title {
-  
-  font-family: "Recursive", sans-serif;
-  font-size: $typography-size-heading-xlarge;
-  font-weight: 500;
-  line-height: 1.12;
-  letter-spacing: -1.6px;
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
-  width: fit-content;
-  white-space: nowrap;
-  background: linear-gradient(60deg, #8aecdd 0%, #5be6eb 10%, #00defc 20%, #00d5ff 30%, #00c9ff 40%, #B38DFF 50%, #DF6FF4 55%, #8aecdd 60%, #5be6eb 70%, #00defc 80%, #00d5ff 90%, #00c9ff 100%);
-  background-size: 300% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  animation: gradient-flow 5s linear infinite;
+font-family: $typography-family-display-default;
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 112%;
+/* identical to box height, or 72px */
+display: flex;
+align-items: center;
+letter-spacing: -0.04em;
+font-feature-settings: 'salt' on, 'rclt' off;
+color: $color-text-accent-on-dark;
 }
 
 .hero-subtitle {
@@ -205,11 +175,10 @@ img {
 }
 
 .section-title {
-  font-family: "Recursive", sans-serif;
+  font-family: $typography-family-display-default;
   font-size: 24px;
   font-weight: 750;
   line-height: 1.4;
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   color: $color-text-primary-on-dark;
   max-width: 976px;
 }
@@ -261,17 +230,17 @@ img {
 }
 
 .project-title {
-  font-family: "Recursive", sans-serif;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.12;
-  letter-spacing: -1.6px;
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
+  font-family: $typography-family-display-default;
+  font-style: normal;
+  font-size: $typography-size-heading-large;
+  font-weight: $typography-weight-medium-default;
+  line-height: $typography-lineheight-tight-default;
+  letter-spacing: $typography-letterspacing-tight;
   // background: linear-gradient(55.2998deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
   // background-clip: text;
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
-  color: white
+  color: $color-text-primary-on-dark;
 }
 
 .project-title-link {
@@ -289,8 +258,8 @@ img {
 
 .project-text {
   font-family: $typography-family-body-default;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-regular-default;
   line-height: $typography-lineheight-loose-default;
   color: $color-text-primary-on-dark;
   opacity: 0.8;
@@ -298,7 +267,7 @@ img {
 
 .read-more {
   font-family: $typography-family-body-default;
-  font-size: 20px;
+  font-size: $typography-size-body-default;
   font-weight: 400;
   line-height: $typography-lineheight-loose-default;
   color: $color-text-primary-on-dark;
@@ -380,7 +349,7 @@ img {
 .back-button {
   font-family: $typography-family-body-default;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $typography-weight-regular-default;
   line-height: 1.2;
   color: $color-text-primary-on-dark;
   text-decoration: none;
@@ -399,23 +368,13 @@ img {
 }
 
 .project-detail-title {
-  font-family: "Recursive", sans-serif;
-  font-size: $typography-size-heading-xlarge;
-  font-weight: 500;
-  line-height: $typography-lineheight-tight-default;
-  letter-spacing: -3.5px;
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
-  // background: linear-gradient(36.917deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  color: #8AECDD;
+ @extend .hero-title;
 }
 
 .project-detail-subtitle {
   font-family: $typography-family-body-default;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: $typography-size-section-title;
+  font-weight: $typography-weight-regular-default;
   line-height: $typography-lineheight-loose-default;
   color: $color-text-primary-on-dark;
 }
@@ -440,11 +399,10 @@ img {
   max-width: 976px;
 }
 .project-details h2 {
-  font-family: "Recursive", sans-serif;
+  font-family: $typography-family-display-default;
   font-size: 40px;
   font-weight: 750;
   line-height: 1.4;
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   color: $color-text-primary-on-dark;
   margin-bottom: 16px;
   margin-top: 48px;
@@ -472,7 +430,7 @@ img {
 .project-details ul {
   font-family: $typography-family-body-default;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $typography-weight-regular-default;
   line-height: $typography-lineheight-loose-default;
   color: $color-text-primary-on-dark;
   margin-bottom: 24px;
@@ -597,7 +555,7 @@ img {
   margin-bottom: 0;
   font-family: $typography-family-body-default;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $typography-weight-regular-default;
   line-height: $typography-lineheight-loose-default;
   color: $color-text-primary-on-dark;
 }
@@ -672,11 +630,10 @@ img {
 }
 
 .nav-title {
-  font-family: "Recursive", sans-serif;
+  font-family: $typography-family-display-default;
   font-size: 28px;
   font-weight: 750;
   line-height: 1.12;
-  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   color: $color-text-primary-on-dark;
 }
 
@@ -704,7 +661,7 @@ img {
 }
 
 .mobile-menu-overlay {
-  font-family: "Recursive", sans-serif;
+  font-family: $typography-family-display-default;
   display: none;
   position: fixed;
   top: 0;
@@ -748,7 +705,7 @@ img {
 }
 .mobile-menu-header .logo p {
   margin: 0;
-  font-family: "Recursive", sans-serif;
+  font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: 400;
   color: $color-text-primary-on-dark;
@@ -844,7 +801,7 @@ img {
   }
   .project-detail-title {
     font-size: 48px;
-    letter-spacing: -1.92px;
+    letter-spacing: $typography-letterspacing-none;
   }
   .project-navigation {
     padding: 32px 16px;
@@ -879,7 +836,7 @@ img {
   }
   .project-title {
     font-size: 28px;
-    letter-spacing: -1.12px;
+    letter-spacing: $typography-letterspacing-none;
   }
   .project-text {
     font-size: 18px;
@@ -900,7 +857,7 @@ img {
   }
   .project-detail-title {
     font-size: 36px;
-    letter-spacing: -1.44px;
+    letter-spacing: $typography-letterspacing-none;
   }
   .project-detail-subtitle {
     font-size: 18px;
@@ -969,7 +926,7 @@ img {
   }
   .project-detail-title {
     font-size: 32px;
-    letter-spacing: -1.28px;
+    letter-spacing: $typography-letterspacing-tight;
   }
   .project-detail-subtitle {
     font-size: 16px;

@@ -16,13 +16,14 @@
 $white: #ffffff;
 $darkblue: #041325;
 $darkblue-50: #04132568;
+$accent-blue: #8AECDD;
 
 // Semantic color aliases — use these in components for intent-based styling
 $color-background-page-light: $white;
 $color-background-page-dark: $darkblue;
 $color-background-page-dark-50: $darkblue-50;
 $color-text-primary-on-dark: $white;
-
+$color-text-accent-on-dark: $accent-blue;
 // Gradient (presentational; spec composite type = stops + positions)
 // $description: Brand gradient for hero/sections; define stop colors as tokens
 // for single source of truth if needed.
@@ -48,8 +49,8 @@ $gradient-brand-default-light: linear-gradient(
 // below reference these. Dimensions provided in px and rem for scalability.
 
 // Font Families
-$typography-family-display-default: 'Recursive', sans-serif;
-$typography-family-body-default: 'Recursive', serif;
+$typography-family-display-default: 'Noto Serif', serif;
+$typography-family-body-default: 'Noto Sans', sans-serif;
 
 // Base size for rem scale (spec: rem = multiple of root font size)
 $typography-base-size: 16px;
@@ -67,6 +68,7 @@ $typography-size-section-title: 1.5rem;   // 24px
 // Font Weights (spec: 1–1000; 750 intentional per design)
 $typography-weight-regular-default: 300;
 $typography-weight-normal-default: 400;
+$typography-weight-medium-default: 500;
 $typography-weight-bold-default: 700;
 $typography-weight-semibold-default: 750;
 $typography-weight-black-default: 900;
@@ -83,9 +85,3 @@ $typography-letterspacing-tight: -0.02em;
 $typography-letterspacing-default: 0;
 $typography-letterspacing-wide: 0.05em;
 
-
-// Font Variations
-$typography-variation-settings-casl: "CASL" 0.8;
-$typography-variation-settings-crsv: "CRSV" 1;
-$typography-variation-settings-mono: "MONO" 0;
-$typography-variation-settings-slnt: "slnt" -5;
