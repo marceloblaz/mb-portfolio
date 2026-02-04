@@ -49,7 +49,7 @@ $gradient-brand-default-light: linear-gradient(
 
 // Font Families
 $typography-family-display-default: 'Recursive', sans-serif;
-$typography-family-body-default: 'Roboto Serif', serif;
+$typography-family-body-default: 'Recursive', serif;
 
 // Base size for rem scale (spec: rem = multiple of root font size)
 $typography-base-size: 16px;
@@ -82,3 +82,10 @@ $typography-letterspacing-none: 0;
 $typography-letterspacing-tight: -0.02em;
 $typography-letterspacing-default: 0;
 $typography-letterspacing-wide: 0.05em;
+
+
+// Font Variations
+$typography-variation-settings-casl: "CASL" 0.8;
+$typography-variation-settings-crsv: "CRSV" 1;
+$typography-variation-settings-mono: "MONO" 0;
+$typography-variation-settings-slnt: "slnt" -5;

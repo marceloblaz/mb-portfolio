@@ -1,6 +1,5 @@
 @use "variables" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 @font-face {
   font-family: "Recursive";
   src: url("./fonts/Recursive_VF_1.085.woff2") format("woff2-variations");
@@ -31,24 +30,22 @@ body {
 .project-title {
   font-family: "Recursive", Arial, sans-serif;
   font-feature-settings: 'salt' on, 'rclt' off;
-  font-variation-settings: 'CASL' 0, 'CRSV' 0.5, 'MONO' 0, 'slnt' -5;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
 }
 
-.hero-title {
-  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0, "slnt" -5;
-}
+
 
 .section-title {
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0 !important;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
 }
 
 .project-title {
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -5 !important;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
 }
 
 .nav-link,
 .logo p {
-  font-variation-settings: "CASL" 0, "CRSV" 0.5, "MONO" 0 !important;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
 }
 
 button {
@@ -156,7 +153,7 @@ img {
 }
 
 .hero-content {
-  padding: 40px 24px;
+  padding: 96px 24px;
 }
 
 .text-container {
@@ -172,8 +169,8 @@ img {
   font-size: $typography-size-heading-xlarge;
   font-weight: 500;
   line-height: 1.12;
-  letter-spacing: -3px;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -5;
+  letter-spacing: -1.6px;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   width: fit-content;
   white-space: nowrap;
   background: linear-gradient(60deg, #8aecdd 0%, #5be6eb 10%, #00defc 20%, #00d5ff 30%, #00c9ff 40%, #B38DFF 50%, #DF6FF4 55%, #8aecdd 60%, #5be6eb 70%, #00defc 80%, #00d5ff 90%, #00c9ff 100%);
@@ -212,7 +209,7 @@ img {
   font-size: 24px;
   font-weight: 750;
   line-height: 1.4;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   color: $color-text-primary-on-dark;
   max-width: 976px;
 }
@@ -269,7 +266,7 @@ img {
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -1.6px;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   // background: linear-gradient(55.2998deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
   // background-clip: text;
   // -webkit-background-clip: text;
@@ -397,7 +394,7 @@ img {
 .project-header {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 48px;
   max-width: 976px;
 }
 
@@ -407,12 +404,12 @@ img {
   font-weight: 500;
   line-height: $typography-lineheight-tight-default;
   letter-spacing: -3.5px;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "slnt" -5 !important;
-  background: linear-gradient(36.917deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
+  // background: linear-gradient(36.917deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  color: #8AECDD;
 }
 
 .project-detail-subtitle {
@@ -447,7 +444,7 @@ img {
   font-size: 40px;
   font-weight: 750;
   line-height: 1.4;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   color: $color-text-primary-on-dark;
   margin-bottom: 16px;
   margin-top: 48px;
@@ -458,7 +455,7 @@ img {
 .project-details p {
   font-family: $typography-family-body-default;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $typography-weight-regular-default;
   line-height: $typography-lineheight-loose-default;
   color: $color-text-primary-on-dark;
   margin-bottom: 24px;
@@ -679,7 +676,7 @@ img {
   font-size: 28px;
   font-weight: 750;
   line-height: 1.12;
-  font-variation-settings: "CASL" 0.3, "CRSV" 1, "MONO" 0, "SLNT" -5;
+  font-variation-settings: $typography-variation-settings-casl, $typography-variation-settings-crsv, $typography-variation-settings-mono, $typography-variation-settings-slnt;
   color: $color-text-primary-on-dark;
 }
 
@@ -864,7 +861,7 @@ img {
     padding: 16px;
   }
   .hero-content {
-    padding: 32px 16px;
+    padding: 48px 16px;
   }
   .hero-title {
     font-size: 36px;
@@ -899,7 +896,7 @@ img {
     padding: 16px;
   }
   .project-hero-content {
-    padding: 32px 16px 24px;
+    padding: 48px 16px 24px;
   }
   .project-detail-title {
     font-size: 36px;
