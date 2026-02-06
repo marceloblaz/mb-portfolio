@@ -1,189 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marcelo Brasileiro - Product Designer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="home">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-content">
-                <div class="logo">
-                    <p>Marcelo Brasileiro</p>
-                </div>
-                <nav class="navigation">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#about" class="nav-link">About me</a>
-                    <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer" class="nav-link">Linkedin</a>
-                    <a href="mailto:marcelo.brasileiro@gmail.com" class="nav-link">Email</a>
-                </nav>
-                <button class="hamburger-menu" aria-label="Toggle navigation menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
-            </div>
-        </header>
-
-        <!-- Mobile Menu Overlay -->
-        <div class="mobile-menu-overlay">
-            <div class="mobile-menu">
-                <div class="mobile-menu-header">
-                    <div class="logo">
-                        <p>Marcelo Brasileiro</p>
-                    </div>
-                    <button class="close-menu" aria-label="Close navigation menu">×</button>
-                </div>
-                <nav class="mobile-navigation">
-                    <a href="#projects" class="mobile-nav-link">Projects</a>
-                    <a href="#about" class="mobile-nav-link">About me</a>
-                    <a href="https://www.linkedin.com/in/marceloblaz/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">Linkedin</a>
-                    <a href="mailto:marcelo.brasileiro@gmail.com" class="mobile-nav-link">Email</a>
-                </nav>
-            </div>
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <div class="logo">
+            <p>Marcelo Brasileiro</p>
+          </div>
+          <nav class="navigation">
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#about" class="nav-link">About me</a>
+            <a
+              href="https://www.linkedin.com/in/marceloblaz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-link"
+              >Linkedin</a
+            >
+            <a href="mailto:marcelo.brasileiro@gmail.com" class="nav-link"
+              >Email</a
+            >
+          </nav>
+          <button class="hamburger-menu" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
         </div>
+      </header>
 
-        <div class="main-container">
-
-            <!-- Hero Section -->
-            <section class="hero-section">
-                <div class="hero-content">
-                    <div class="text-container">
-                        <h1 class="hero-title">Hello world! I’m Marcelo.</h1>
-                        <p class="hero-subtitle">I focus on solving complex problems, building beautiful, intuitive products, and helping teams evolve ideas from 0→1.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects" class="projects-section">
-                <div class="projects-content">
-                    <h2 class="section-title">Projects</h2>
-                    <div class="projects-container">
-                        <!-- Project 1 -->
-                        <article class="project-card">
-                            <div class="project-image-preview">
-                                <img src="images/galley-menu.png" alt="Galley Menu Planner Interface">
-                            </div>
-                            <div class="project-info">
-                                <div class="project-description">
-                                    <a href="designing-for-complexity-galleys-enterprise-menu-planner.html" class="project-title-link">
-                                        <h3 class="project-title">Designing for Complexity: Galley's Enterprise Menu Planner</h3>
-                                    </a>
-                                    <p class="project-text">Designed a flexible, data-driven menu planner that helps chefs save time, reduce errors, and scale their operations.</p>
-                                </div>
-                                <a href="designing-for-complexity-galleys-enterprise-menu-planner.html" class="read-more">Read more</a>
-                            </div>
-                        </article>
-                    </article>
-                    
-                    
-                    
-                    
-                    <!-- Project 2 -->
-                    <article class="project-card">
-                        <div class="project-image-preview">
-                            <img src="images/redefining-the-rv-experience-with-a-tablet-first-interface.png" alt="Lightship RV Interface">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-description">
-                                <a href="redefining-the-RV-experience-with-at-ablet-first-interface.html" class="project-title-link">
-                                    <h3 class="project-title">Redefining the RV Experience with a Tablet-First Interface</h3>
-                                </a>
-                                <p class="project-text">Designing the central control panel for Lightship's revolutionary all-electric, aerodynamic RV — creating an intuitive interface for the future of travel.</p>
-                            </div>
-                            <a href="redefining-the-RV-experience-with-at-ablet-first-interface.html" class="read-more">Read more</a>
-                        </div>
-                    </article>
-                    <!-- Project 3 -->
-                    <article class="project-card">
-                        <div class="project-image-preview">
-                            <img src="images/figma-plugin.png" alt="Figma Plugin Interface">
-                        </div>
-                                                    <div class="project-info">
-                                <div class="project-description">
-                                    <a href="creating-and-coding-a-figma-plugin-used-by-5k-designers.html" class="project-title-link">
-                                        <h3 class="project-title">Creating and Coding a Figma plugin used by 5.7k designers</h3>
-                                    </a>
-                                    <p class="project-text">A self-initiated project that turned a manual design task into a one-click solution — now helping thousands of Figma users.</p>
-                                </div>
-                                <a href="creating-and-coding-a-figma-plugin-used-by-5k-designers.html" class="read-more">Read more</a>
-                            </div>
-                </div>
-                </div>
-            </section>
-
-            <!-- About Section -->
-            <section id="about" class="about-section">
-                <div class="about-content">
-                    <div class="content-container">
-                        <h2 class="section-title">About me</h2>
-                        <div class="main-content">
-                            <div class="about-text">
-                                <p>I’m Marcelo Brasileiro, a product designer based in Brasília, Brazil, with over six years of experience designing tools, platforms, and systems for companies around the world.</p>
-                                
-                                <p>I specialize in bridging high-level product thinking with practical execution. My generalist approach allows me to work across strategy, research, and implementation — especially in complex or ambiguous problem spaces. Whether it’s helping a startup shape a new product or refining enterprise software at scale, I focus on clarity, adaptability, and delivering real value.</p>
-                            </div>
-                            <div class="about-video">
-                                <iframe width="1014" height="572" src="https://www.youtube.com/embed/HN9pGHM8MJ8" title="Marcelo Brasileiro introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu">
+          <div class="mobile-menu-header">
+            <div class="logo">
+              <p>Marcelo Brasileiro</p>
+            </div>
+            <button class="close-menu" aria-label="Close navigation menu">
+              ×
+            </button>
+          </div>
+          <nav class="mobile-navigation">
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#about" class="mobile-nav-link">About me</a>
+            <a
+              href="https://www.linkedin.com/in/marceloblaz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mobile-nav-link"
+              >Linkedin</a
+            >
+            <a
+              href="mailto:marcelo.brasileiro@gmail.com"
+              class="mobile-nav-link"
+              >Email</a
+            >
+          </nav>
         </div>
+      </div>
+
+      <div class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <div class="text-container">
+              <h1 class="hero-title">
+                I’m a product engineer who solves complex problems through
+                creative, elegant solutions from 0→1.
+              </h1>
+              <!-- <p class="hero-subtitle">I focus on solving complex problems, building beautiful, intuitive products, and helping teams evolve ideas from 0→1.</p> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+          <div class="projects-content">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+              <!-- Project 1 -->
+              <article class="project-card">
+                <div class="project-image-preview">
+                  <img
+                    src="images/figma-plugin.png"
+                    alt="Figma Plugin Interface"
+                  />
+                </div>
+                <div class="project-info">
+                  <div class="project-description">
+                    <a
+                      href="creating-and-coding-a-figma-plugin-used-by-5k-designers.html"
+                      class="project-title-link"
+                    >
+                      <h3 class="project-title">
+                        Creating and Coding a Figma plugin used by 5.7k
+                        designers
+                      </h3>
+                    </a>
+                    <p class="project-text">
+                      A self-initiated project that turned a manual design task
+                      into a one-click solution — now helping thousands of Figma
+                      users.
+                    </p>
+                  </div>
+                  <a
+                    href="creating-and-coding-a-figma-plugin-used-by-5k-designers.html"
+                    class="read-more"
+                    >Read more</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-image-preview">
+                  <img
+                    src="images/galley-menu.png"
+                    alt="Galley Menu Planner Interface"
+                  />
+                </div>
+                <div class="project-info">
+                  <div class="project-description">
+                    <a
+                      href="designing-for-complexity-galleys-enterprise-menu-planner.html"
+                      class="project-title-link"
+                    >
+                      <h3 class="project-title">
+                        Designing for Complexity: Galley's Enterprise Menu
+                        Planner
+                      </h3>
+                    </a>
+                    <p class="project-text">
+                      Designed a flexible, data-driven menu planner that helps
+                      chefs save time, reduce errors, and scale their
+                      operations.
+                    </p>
+                  </div>
+                  <a
+                    href="designing-for-complexity-galleys-enterprise-menu-planner.html"
+                    class="read-more"
+                    >Read more</a
+                  >
+                </div>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="project-card">
+                <div class="project-image-preview">
+                  <img
+                    src="images/redefining-the-rv-experience-with-a-tablet-first-interface.png"
+                    alt="Lightship RV Interface"
+                  />
+                </div>
+                <div class="project-info">
+                  <div class="project-description">
+                    <a
+                      href="redefining-the-RV-experience-with-at-ablet-first-interface.html"
+                      class="project-title-link"
+                    >
+                      <h3 class="project-title">
+                        Redefining the RV Experience with a Tablet-First
+                        Interface
+                      </h3>
+                    </a>
+                    <p class="project-text">
+                      Designing the central control panel for Lightship's
+                      revolutionary all-electric, aerodynamic RV — creating an
+                      intuitive interface for the future of travel.
+                    </p>
+                  </div>
+                  <a
+                    href="redefining-the-RV-experience-with-at-ablet-first-interface.html"
+                    class="read-more"
+                    >Read more</a
+                  >
+                </div>
+              </article>
+              <!-- Project 3 -->
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+          <div class="about-content">
+            <div class="content-container">
+              <h2 class="section-title">About me</h2>
+              <div class="main-content">
+                <div class="about-text">
+                  <p>
+                    I’m Marcelo Brasileiro, a product designer based in
+                    Brasília, Brazil, with over six years of experience
+                    designing tools, platforms, and systems for companies around
+                    the world.
+                  </p>
+
+                  <p>
+                    I specialize in bridging high-level product thinking with
+                    practical execution. My generalist approach allows me to
+                    work across strategy, research, and implementation —
+                    especially in complex or ambiguous problem spaces. Whether
+                    it’s helping a startup shape a new product or refining
+                    enterprise software at scale, I focus on clarity,
+                    adaptability, and delivering real value.
+                  </p>
+                </div>
+                <div class="about-video">
+                  <iframe
+                    width="1014"
+                    height="572"
+                    src="https://www.youtube.com/embed/HN9pGHM8MJ8"
+                    title="Marcelo Brasileiro introduction"
+                    frameborder="0"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script>
-        // Hamburger menu functionality
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
-        const closeMenu = document.querySelector('.close-menu');
-        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+      // Hamburger menu functionality
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
+      const closeMenu = document.querySelector(".close-menu");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 
-        // Open menu
-        hamburgerMenu.addEventListener('click', () => {
-            mobileMenuOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
+      // Open menu
+      hamburgerMenu.addEventListener("click", () => {
+        mobileMenuOverlay.classList.add("active");
+        document.body.style.overflow = "hidden"; // Prevent scrolling
+      });
 
-        // Close menu
-        closeMenu.addEventListener('click', () => {
-            mobileMenuOverlay.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
-        });
+      // Close menu
+      closeMenu.addEventListener("click", () => {
+        mobileMenuOverlay.classList.remove("active");
+        document.body.style.overflow = ""; // Restore scrolling
+      });
 
-        // Close menu when clicking overlay
-        mobileMenuOverlay.addEventListener('click', (e) => {
-            if (e.target === mobileMenuOverlay) {
-                mobileMenuOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
+      // Close menu when clicking overlay
+      mobileMenuOverlay.addEventListener("click", (e) => {
+        if (e.target === mobileMenuOverlay) {
+          mobileMenuOverlay.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+      });
 
-        // Close menu when clicking nav links
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            });
+      // Close menu when clicking nav links
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenuOverlay.classList.remove("active");
+          document.body.style.overflow = "";
         });
+      });
 
-        // Close menu on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
-                mobileMenuOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
+      // Close menu on escape key
+      document.addEventListener("keydown", (e) => {
+        if (
+          e.key === "Escape" &&
+          mobileMenuOverlay.classList.contains("active")
+        ) {
+          mobileMenuOverlay.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+      });
     </script>
-</body>
-</html> 
+  </body>
+</html>

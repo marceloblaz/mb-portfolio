@@ -128,7 +128,7 @@ img {
 }
 
 .hero-content {
-  padding: 96px 24px;
+  padding: 32px 24px;
 }
 
 .text-container {
@@ -141,14 +141,14 @@ img {
 .hero-title {
 font-family: $typography-family-display-default;
 font-style: normal;
-font-weight: 500;
-font-size: 64px;
-line-height: 112%;
+font-weight: $typography-weight-medium-default;
+font-size: $typography-size-heading-xlarge;
+line-height: $typography-lineheight-comfortable-default;
+font-feature-settings: 'tnum' on, 'onum' on, 'salt' on, 'ss03' on, 'rclt' off;
 /* identical to box height, or 72px */
 display: flex;
 align-items: center;
-letter-spacing: -0.04em;
-font-feature-settings: 'salt' on, 'rclt' off;
+letter-spacing: $typography-letterspacing-tight;
 color: $color-text-accent-on-dark;
 }
 
@@ -339,7 +339,7 @@ color: $color-text-accent-on-dark;
 }
 
 .project-hero-content {
-  padding: 96px 24px 24px;
+  padding: 32px 24px 24px;
 }
 
 .back-link {
@@ -400,12 +400,12 @@ color: $color-text-accent-on-dark;
 }
 .project-details h2 {
   font-family: $typography-family-display-default;
-  font-size: 40px;
-  font-weight: 750;
-  line-height: 1.4;
+  font-size: $typography-size-heading-medium;
+  font-weight: $typography-weight-semibold-default;
+  line-height: $typography-lineheight-tight-default;
   color: $color-text-primary-on-dark;
   margin-bottom: 16px;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 .project-details h2:first-child {
   margin-top: 0;
@@ -767,7 +767,7 @@ color: $color-text-accent-on-dark;
     padding: 16px;
   }
   .hero-title {
-    font-size: 48px;
+    font-size: $typography-size-heading-large;
     letter-spacing: -1.92px;
     white-space: normal;
   }
