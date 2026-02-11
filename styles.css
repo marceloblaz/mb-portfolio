@@ -85,10 +85,9 @@ img {
 }
 
 .logo p {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.2;
+  font-family: "Noto Serif", serif;
+  font-size: 1.125rem;
+  font-weight: 500;
   color: #ffffff;
   white-space: nowrap;
 }
@@ -100,10 +99,9 @@ img {
 }
 
 .nav-link {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.2;
+  font-family: "Noto Serif", serif;
+  font-size: 1.125rem;
+  font-weight: 500;
   color: #ffffff;
   white-space: nowrap;
   text-decoration: none;
@@ -149,7 +147,7 @@ img {
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-  color: #8AECDD;
+  color: #8aecdd;
 }
 
 .hero-subtitle {
@@ -275,6 +273,28 @@ img {
 
 .read-more:hover {
   opacity: 0.8;
+}
+
+.read-more-button {
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #041325;
+  background-color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 9999px;
+  text-align: center;
+  transition: opacity 0.2s ease;
+  width: fit-content;
+  padding: 6px 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.read-more-button:hover {
+  opacity: 0.9;
 }
 
 .about-section {
@@ -733,9 +753,9 @@ img {
 
 .mobile-menu-header .logo p {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: "Noto Serif", serif;
+  font-size: 1.125rem;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -766,9 +786,9 @@ img {
 }
 
 .mobile-nav-link {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
+  font-family: "Noto Serif", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
   line-height: 1.5;
   color: #ffffff;
   text-decoration: none;
@@ -805,7 +825,8 @@ img {
     flex-direction: column !important;
     gap: 32px;
   }
-  .project-card:nth-child(odd), .project-card:nth-child(even) {
+  .project-card:nth-child(odd),
+  .project-card:nth-child(even) {
     flex-direction: column;
   }
   .project-image-preview,
@@ -941,9 +962,10 @@ img {
     line-height: 1.4;
     opacity: 0.8;
   }
-  .read-more {
-    font-size: 16px;
-    letter-spacing: -0.16px;
+  .read-more-button {
+    font-size: 1.125rem;
+    width: fit-content;
+    padding: 14px 6px;
   }
   .about-content {
     padding: 16px;

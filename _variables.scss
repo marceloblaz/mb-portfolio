@@ -16,29 +16,31 @@
 $white: #ffffff;
 $darkblue: #041325;
 $darkblue-50: #04132568;
-$accent-blue: #8AECDD;
+$accent-blue: #8aecdd;
 
 // Semantic color aliases — use these in components for intent-based styling
 $color-background-page-light: $white;
 $color-background-page-dark: $darkblue;
 $color-background-page-dark-50: $darkblue-50;
 $color-text-primary-on-dark: $white;
+$color-text-primary-on-light: $darkblue;
 $color-text-accent-on-dark: $accent-blue;
+$color-background-button-default: $white;
 // Gradient (presentational; spec composite type = stops + positions)
 // $description: Brand gradient for hero/sections; define stop colors as tokens
 // for single source of truth if needed.
 // =============================================================================
 $gradient-brand-default-light: linear-gradient(
-  36.5814deg, 
-  rgb(138, 236, 221) 0.75995%, 
-  rgb(91, 230, 235) 11.787%, 
-  rgb(0, 222, 252) 22.813%, 
-  rgb(0, 213, 255) 33.84%, 
-  rgb(0, 201, 255) 44.867%, 
-  rgb(45, 185, 255) 55.893%, 
-  rgb(123, 166, 255) 66.92%, 
-  rgb(179, 141, 255) 77.947%, 
-  rgb(223, 111, 244) 88.973%, 
+  36.5814deg,
+  rgb(138, 236, 221) 0.75995%,
+  rgb(91, 230, 235) 11.787%,
+  rgb(0, 222, 252) 22.813%,
+  rgb(0, 213, 255) 33.84%,
+  rgb(0, 201, 255) 44.867%,
+  rgb(45, 185, 255) 55.893%,
+  rgb(123, 166, 255) 66.92%,
+  rgb(179, 141, 255) 77.947%,
+  rgb(223, 111, 244) 88.973%,
   rgb(255, 71, 203) 100%
 );
 
@@ -49,21 +51,20 @@ $gradient-brand-default-light: linear-gradient(
 // below reference these. Dimensions provided in px and rem for scalability.
 
 // Font Families
-$typography-family-display-default: 'Noto Serif', serif;
-$typography-family-body-default: 'Noto Sans', sans-serif;
+$typography-family-display-default: "Noto Serif", serif;
+$typography-family-body-default: "Noto Sans", sans-serif;
 
 // Base size for rem scale (spec: rem = multiple of root font size)
 $typography-base-size: 16px;
 
-
 // Font Sizes — rem (for scalable layouts; 1rem = $typography-base-size)
-$typography-size-heading-small: 1.25rem;   // 20px
-$typography-size-heading-medium: 1.75rem;   // 28px
-$typography-size-heading-large: 2.5rem;    // 40px
-$typography-size-heading-xlarge: 3rem;     // 48px
-$typography-size-body-default: 1.125rem;   // 18px
-$typography-size-body-large: 1.25rem;      // 20px
-$typography-size-section-title: 1.5rem;   // 24px
+$typography-size-heading-small: 1.25rem; // 20px
+$typography-size-heading-medium: 1.75rem; // 28px
+$typography-size-heading-large: 2.5rem; // 40px
+$typography-size-heading-xlarge: 3rem; // 48px
+$typography-size-body-default: 1.125rem; // 18px
+$typography-size-body-large: 1.25rem; // 20px
+$typography-size-section-title: 1.5rem; // 24px
 
 // Font Weights (spec: 1–1000; 750 intentional per design)
 $typography-weight-regular-default: 300;
@@ -84,4 +85,3 @@ $typography-letterspacing-none: 0;
 $typography-letterspacing-tight: -0.02em;
 $typography-letterspacing-default: 0;
 $typography-letterspacing-wide: 0.05em;
-

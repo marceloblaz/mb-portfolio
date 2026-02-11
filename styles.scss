@@ -71,7 +71,13 @@ img {
   right: 0;
   bottom: 0;
   backdrop-filter: blur(10px);
-  background: linear-gradient(to bottom, $color-background-page-dark-50 0%, $color-background-page-dark-50 50%, $color-background-page-dark-50 70%, transparent 100%);
+  background: linear-gradient(
+    to bottom,
+    $color-background-page-dark-50 0%,
+    $color-background-page-dark-50 50%,
+    $color-background-page-dark-50 70%,
+    transparent 100%
+  );
   z-index: -1;
 }
 
@@ -86,10 +92,9 @@ img {
 }
 
 .logo p {
-  font-family: $typography-family-body-default;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.2;
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-medium-default;
   color: $color-text-primary-on-dark;
   white-space: nowrap;
 }
@@ -101,10 +106,9 @@ img {
 }
 
 .nav-link {
-  font-family: $typography-family-body-default;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.2;
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-medium-default;
   color: $color-text-primary-on-dark;
   white-space: nowrap;
   text-decoration: none;
@@ -139,17 +143,22 @@ img {
 }
 
 .hero-title {
-font-family: $typography-family-display-default;
-font-style: normal;
-font-weight: $typography-weight-medium-default;
-font-size: $typography-size-heading-xlarge;
-line-height: $typography-lineheight-comfortable-default;
-font-feature-settings: 'tnum' on, 'onum' on, 'salt' on, 'ss03' on, 'rclt' off;
-/* identical to box height, or 72px */
-display: flex;
-align-items: center;
-letter-spacing: $typography-letterspacing-tight;
-color: $color-text-accent-on-dark;
+  font-family: $typography-family-display-default;
+  font-style: normal;
+  font-weight: $typography-weight-medium-default;
+  font-size: $typography-size-heading-xlarge;
+  line-height: $typography-lineheight-comfortable-default;
+  font-feature-settings:
+    "tnum" on,
+    "onum" on,
+    "salt" on,
+    "ss03" on,
+    "rclt" off;
+  /* identical to box height, or 72px */
+  display: flex;
+  align-items: center;
+  letter-spacing: $typography-letterspacing-tight;
+  color: $color-text-accent-on-dark;
 }
 
 .hero-subtitle {
@@ -274,6 +283,27 @@ color: $color-text-accent-on-dark;
 }
 .read-more:hover {
   opacity: 0.8;
+}
+
+.read-more-button {
+  display: inline-block;
+  font-family: $typography-family-body-default;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-medium-default;
+  line-height: $typography-lineheight-loose-default;
+  color: $color-text-primary-on-light;
+  background-color: $color-background-button-default;
+  text-decoration: none;
+  border: none;
+  border-radius: 9999px;
+  text-align: center;
+  transition: opacity 0.2s ease;
+  width: fit-content;
+  padding: 6px 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.read-more-button:hover {
+  opacity: 0.9;
 }
 
 .about-section {
@@ -472,7 +502,9 @@ color: $color-text-accent-on-dark;
   background: rgba(0, 0, 0, 0.9);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
   cursor: pointer;
   &.active {
     opacity: 1;
@@ -705,9 +737,9 @@ color: $color-text-accent-on-dark;
 }
 .mobile-menu-header .logo p {
   margin: 0;
-  font-family: $typography-family-body-default;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-body-default;
+  font-weight: $typography-weight-medium-default;
   color: $color-text-primary-on-dark;
 }
 
@@ -737,9 +769,9 @@ color: $color-text-accent-on-dark;
 }
 
 .mobile-nav-link {
-  font-family: $typography-family-body-default;
-  font-size: 28px;
-  font-weight: 400;
+  font-family: $typography-family-display-default;
+  font-size: $typography-size-body-large;
+  font-weight: $typography-weight-medium-default;
   line-height: $typography-lineheight-loose-default;
   color: $color-text-primary-on-dark;
   text-decoration: none;
@@ -775,7 +807,8 @@ color: $color-text-accent-on-dark;
     flex-direction: column !important;
     gap: 32px;
   }
-  .project-card:nth-child(odd), .project-card:nth-child(even) {
+  .project-card:nth-child(odd),
+  .project-card:nth-child(even) {
     flex-direction: column;
   }
   .project-image-preview,
@@ -911,9 +944,10 @@ color: $color-text-accent-on-dark;
     line-height: 1.4;
     opacity: 0.8;
   }
-  .read-more {
-    font-size: 16px;
-    letter-spacing: -0.16px;
+  .read-more-button {
+    font-size: $typography-size-body-default;
+    width: fit-content;
+    padding: 14px 6px;
   }
   .about-content {
     padding: 16px;
