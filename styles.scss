@@ -157,7 +157,6 @@ img {
   /* identical to box height, or 72px */
   display: flex;
   align-items: center;
-  letter-spacing: $typography-letterspacing-tight;
   color: $color-text-accent-on-dark;
 }
 
@@ -800,7 +799,6 @@ img {
   }
   .hero-title {
     font-size: $typography-size-heading-large;
-    letter-spacing: -1.92px;
     white-space: normal;
   }
   .project-card {
@@ -855,7 +853,6 @@ img {
   }
   .hero-title {
     font-size: 36px;
-    letter-spacing: -1.44px;
   }
   .hero-subtitle {
     font-size: 18px;
@@ -918,7 +915,6 @@ img {
   }
   .hero-title {
     font-size: 32px;
-    letter-spacing: -1.28px;
   }
   .hero-subtitle {
     font-size: 18px;
