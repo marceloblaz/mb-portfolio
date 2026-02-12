@@ -961,7 +961,7 @@ img {
   .read-more-button {
     font-size: 1.125rem;
     width: fit-content;
-    padding: 14px 6px;
+    padding: 6px 14px;
   }
   .about-content {
     padding: 16px;
