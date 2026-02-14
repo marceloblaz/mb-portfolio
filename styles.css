@@ -126,7 +126,7 @@ img {
 }
 
 .hero-content {
-  padding: 32px 24px;
+  padding: 64px 64px 0 24px;
 }
 
 .text-container {
@@ -165,7 +165,7 @@ img {
 
 .projects-content {
   display: flex;
-  padding: 56px 24px;
+  padding: 128px 24px;
   flex-direction: column;
   gap: 24px;
 }
@@ -182,7 +182,7 @@ img {
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 128px;
+  gap: 192px;
 }
 
 .project-card {
@@ -362,7 +362,7 @@ img {
 }
 
 .project-hero-content {
-  padding: 32px 24px 24px;
+  padding: 48px 24px 0 24px;
 }
 
 .back-link {
@@ -387,7 +387,7 @@ img {
 .project-header {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
   max-width: 976px;
 }
 
@@ -420,18 +420,18 @@ img {
   max-width: 976px;
 }
 
+.project-details h2:first-child {
+  margin-top: 64px;
+}
+
 .project-details h2 {
   font-family: "Noto Serif", serif;
   font-size: 1.75rem;
   font-weight: 750;
   line-height: 1.1;
   color: #ffffff;
-  margin-bottom: 16px;
-  margin-top: 32px;
-}
-
-.project-details h2:first-child {
-  margin-top: 0;
+  margin-bottom: 32px;
+  margin-top: 96px;
 }
 
 .project-details p {
