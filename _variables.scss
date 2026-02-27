@@ -17,6 +17,7 @@ $white: #ffffff;
 $darkblue: #041325;
 $darkblue-50: #04132568;
 $accent-blue: #8aecdd;
+$accent-marroon: #b87669;
 
 // Semantic color aliases — use these in components for intent-based styling
 $color-background-page-light: $white;
@@ -24,7 +25,7 @@ $color-background-page-dark: $darkblue;
 $color-background-page-dark-50: $darkblue-50;
 $color-text-primary-on-dark: $white;
 $color-text-primary-on-light: $darkblue;
-$color-text-accent-on-dark: $accent-blue;
+$color-text-accent-on-dark: $accent-marroon;
 $color-background-button-default: $white;
 // Gradient (presentational; spec composite type = stops + positions)
 // $description: Brand gradient for hero/sections; define stop colors as tokens
