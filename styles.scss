@@ -165,7 +165,7 @@ img {
   font-style: normal;
   font-weight: $typography-weight-medium-default;
   font-size: $typography-size-heading-xlarge;
-  line-height: $typography-lineheight-comfortable-default;
+  line-height: $typography-lineheight-tight-default;
   font-feature-settings:
     "tnum" on,
     "onum" on,
@@ -933,7 +933,7 @@ img {
     padding: 24px 16px;
   }
   .hero-title {
-    font-size: 32px;
+    font-size: $typography-size-heading-large;
   }
   .hero-subtitle {
     font-size: 18px;
