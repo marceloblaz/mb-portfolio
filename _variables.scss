@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // =============================================================================
 // Design Tokens (SCSS) — Aligned with Design Tokens Format Module
 // https://www.designtokens.org/tr/drafts/format/
@@ -57,6 +59,19 @@ $typography-family-body-default: "Switzer", sans-serif;
 
 // Base size for rem scale (spec: rem = multiple of root font size)
 $typography-base-size: 16px;
+
+// Baseline grid — ensures line-height × font-size is a multiple of $baseline-grid
+$baseline-grid: 4px;
+$baseline-debug: false; // Set to false to hide 4px grid overlay
+
+// Returns unitless line-height so (font-size × line-height) lands on the grid
+@function baseline-line-height($font-size-px, $min-multiplier: 1.2) {
+  $line-box: math.ceil(
+      math.div($font-size-px * $min-multiplier, $baseline-grid)
+    ) *
+    $baseline-grid;
+  @return math.div($line-box, $font-size-px);
+}
 
 // Font Sizes — rem (for scalable layouts; 1rem = $typography-base-size)
 $typography-size-heading-small: 1.25rem; // 20px

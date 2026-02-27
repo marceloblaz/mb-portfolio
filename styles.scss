@@ -14,7 +14,15 @@ body {
   font-family: $typography-family-body-default;
   background-color: $color-background-page-dark;
   color: $color-text-primary-on-dark;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(16, 1.5);
+  @if $baseline-debug {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0.12) 1px,
+      transparent 1px
+    );
+    background-size: 100% $baseline-grid;
+  }
 }
 
 .hero-title,
@@ -113,6 +121,7 @@ img {
   font-family: $typography-family-display-default;
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-medium-default;
+  line-height: baseline-line-height(18);
   color: $color-text-primary-on-dark;
   white-space: nowrap;
 }
@@ -127,6 +136,7 @@ img {
   font-family: $typography-family-display-default;
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-medium-default;
+  line-height: baseline-line-height(18);
   color: $color-text-primary-on-dark;
   white-space: nowrap;
   text-decoration: none;
@@ -165,13 +175,8 @@ img {
   font-style: normal;
   font-weight: $typography-weight-medium-default;
   font-size: $typography-size-heading-xlarge;
-  line-height: $typography-lineheight-tight-default;
-  font-feature-settings:
-    "tnum" on,
-    "onum" on,
-    "salt" on,
-    "ss03" on,
-    "rclt" off;
+  line-height: baseline-line-height(48, 1.1);
+
   /* identical to box height, or 72px */
   display: flex;
   align-items: center;
@@ -182,8 +187,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 20px;
   font-weight: 300;
-  line-height: $typography-lineheight-loose-default;
-
+  line-height: baseline-line-height(20, 1.5);
   color: $color-text-primary-on-dark;
 }
 
@@ -204,7 +208,7 @@ img {
   font-family: $typography-family-display-default;
   font-size: 24px;
   font-weight: 750;
-  line-height: 1.4;
+  line-height: baseline-line-height(24, 1.4);
   color: $color-text-primary-on-dark;
   max-width: 976px;
 }
@@ -260,7 +264,7 @@ img {
   font-style: normal;
   font-size: $typography-size-heading-large;
   font-weight: $typography-weight-medium-default;
-  line-height: $typography-lineheight-tight-default;
+  line-height: baseline-line-height(40, 1.1);
   letter-spacing: $typography-letterspacing-tight;
   // background: linear-gradient(55.2998deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
   // background-clip: text;
@@ -286,7 +290,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-dark;
   opacity: 0.8;
 }
@@ -295,7 +299,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: $typography-size-body-default;
   font-weight: 400;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-dark;
 }
 .read-more:hover {
@@ -306,8 +310,8 @@ img {
   display: inline-block;
   font-family: $typography-family-body-default;
   font-size: $typography-size-body-default;
-  font-weight: $typography-weight-medium-default;
-  line-height: $typography-lineheight-loose-default;
+  font-weight: $typography-weight-semibold-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-light;
   background-color: $color-background-button-default;
   text-decoration: none;
@@ -351,7 +355,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-dark;
   flex: 1;
   max-width: 478px;
@@ -397,7 +401,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
-  line-height: 1.2;
+  line-height: baseline-line-height(18, 1.2);
   color: $color-text-primary-on-dark;
   text-decoration: none;
   opacity: 0.8;
@@ -422,7 +426,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: $typography-size-section-title;
   font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(24, 1.5);
   color: $color-text-primary-on-dark;
 }
 
@@ -452,7 +456,7 @@ img {
   font-family: $typography-family-display-default;
   font-size: $typography-size-heading-medium;
   font-weight: $typography-weight-semibold-default;
-  line-height: $typography-lineheight-tight-default;
+  line-height: baseline-line-height(28, 1.1);
   color: $color-text-primary-on-dark;
   margin-bottom: 32px;
   margin-top: 96px;
@@ -462,7 +466,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-dark;
   margin-bottom: 24px;
   opacity: 0.8;
@@ -479,7 +483,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-dark;
   margin-bottom: 24px;
   padding-left: 24px;
@@ -606,7 +610,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-dark;
 }
 .info-callout p a {
@@ -635,7 +639,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: 400;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(18, 1.5);
   color: $color-text-primary-on-dark;
   margin-bottom: 16px;
 }
@@ -673,7 +677,7 @@ img {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: baseline-line-height(18, 1.2);
   color: $color-text-primary-on-dark;
   opacity: 0.6;
   margin-bottom: 4px;
@@ -683,7 +687,7 @@ img {
   font-family: $typography-family-display-default;
   font-size: 28px;
   font-weight: 750;
-  line-height: 1.12;
+  line-height: baseline-line-height(28, 1.12);
   color: $color-text-primary-on-dark;
 }
 
@@ -790,7 +794,7 @@ img {
   font-family: $typography-family-display-default;
   font-size: $typography-size-body-large;
   font-weight: $typography-weight-medium-default;
-  line-height: $typography-lineheight-loose-default;
+  line-height: baseline-line-height(20, 1.5);
   color: $color-text-primary-on-dark;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -818,6 +822,7 @@ img {
   }
   .hero-title {
     font-size: $typography-size-heading-large;
+    line-height: baseline-line-height(40, 1.1);
     white-space: normal;
   }
   .project-card {
@@ -872,9 +877,11 @@ img {
   }
   .hero-title {
     font-size: 36px;
+    line-height: baseline-line-height(36, 1.1);
   }
   .hero-subtitle {
     font-size: 18px;
+    line-height: baseline-line-height(18, 1.5);
     letter-spacing: -0.2px;
   }
   .projects-container {
@@ -885,10 +892,12 @@ img {
   }
   .project-title {
     font-size: 28px;
+    line-height: baseline-line-height(28, 1.1);
     letter-spacing: $typography-letterspacing-none;
   }
   .project-text {
     font-size: 18px;
+    line-height: baseline-line-height(18, 1.5);
     letter-spacing: -0.18px;
     opacity: 0.8;
   }
@@ -906,14 +915,17 @@ img {
   }
   .project-detail-title {
     font-size: 36px;
+    line-height: baseline-line-height(36, 1.1);
     letter-spacing: $typography-letterspacing-none;
   }
   .project-detail-subtitle {
     font-size: 18px;
+    line-height: baseline-line-height(18, 1.5);
     letter-spacing: -0.18px;
   }
   .project-details h2 {
     font-size: 28px;
+    line-height: baseline-line-height(28, 1.1);
     letter-spacing: -1.12px;
     margin-bottom: 16px;
   }
@@ -951,12 +963,12 @@ img {
   .project-title {
     font-size: 24px;
     letter-spacing: -0.96px;
-    line-height: 1.2;
+    line-height: baseline-line-height(24, 1.2);
   }
   .project-text {
     font-size: 16px;
     letter-spacing: -0.16px;
-    line-height: 1.4;
+    line-height: baseline-line-height(16, 1.4);
     opacity: 0.8;
   }
   .read-more-button {
@@ -969,20 +981,24 @@ img {
   }
   .section-title {
     font-size: 20px;
+    line-height: baseline-line-height(20, 1.4);
   }
   .project-hero-content {
     padding: 24px 16px 20px;
   }
   .project-detail-title {
     font-size: 32px;
+    line-height: baseline-line-height(32, 1.1);
     letter-spacing: $typography-letterspacing-tight;
   }
   .project-detail-subtitle {
     font-size: 16px;
+    line-height: baseline-line-height(16, 1.5);
     letter-spacing: -0.16px;
   }
   .project-details h2 {
     font-size: 24px;
+    line-height: baseline-line-height(24, 1.1);
     letter-spacing: -0.96px;
   }
 }
