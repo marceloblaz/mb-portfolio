@@ -16,19 +16,66 @@
 
 // Background (primitive)
 $white: #ffffff;
-$darkblue: #041325;
+$darkblue: #082f5e;
 $darkblue-50: #04132568;
 $accent-blue: #8aecdd;
 $accent-marroon: #b87669;
+$pale-yellow: #ffffe3;
+$marroon: #d95210;
 
 // Semantic color aliases — use these in components for intent-based styling
-$color-background-page-light: $white;
+$color-background-page-light: $pale-yellow;
 $color-background-page-dark: $darkblue;
 $color-background-page-dark-50: $darkblue-50;
 $color-text-primary-on-dark: $white;
 $color-text-primary-on-light: $darkblue;
 $color-text-accent-on-dark: $accent-marroon;
+$color-text-accent-on-light: $marroon; // Warm accent works on both
 $color-background-button-default: $white;
+$color-background-button-light: $darkblue; // CTA on light mode
+$color-text-on-button-light: $white;
+
+// Light mode overlay (header backdrop, mobile menu)
+$color-background-overlay-light: #ffffe3; // white @ 80%
+$color-background-overlay-light-border: #00000014; // subtle border
+
+// =============================================================================
+// THEME — Light & Dark mode token maps (for CSS custom properties)
+// =============================================================================
+// Maps semantic tokens per theme; use with var(--token-name) in components.
+
+$theme-dark: (
+  "background-page": $color-background-page-dark,
+  "background-page-overlay": $color-background-page-dark-50,
+  "text-primary": $color-text-primary-on-dark,
+  "text-accent": $color-text-accent-on-dark,
+  "button-background": $color-background-button-default,
+  "button-text": $color-text-primary-on-light,
+  "overlay-background": rgba(9, 28, 78, 0.85),
+  "shadow-color": rgba(0, 0, 0, 0.3),
+  "shadow-color-strong": rgba(0, 0, 0, 0.5),
+  "info-callout-bg": rgba(255, 255, 255, 0.15),
+  "info-callout-border": rgba(255, 255, 255, 0.25),
+  "quote-accent": $color-text-primary-on-dark,
+  "mobile-menu-border": rgba(255, 255, 255, 0.1),
+);
+
+$theme-light: (
+  "background-page": $color-background-page-light,
+  "background-page-overlay": $color-background-overlay-light,
+  "text-primary": $color-text-primary-on-light,
+  "text-accent": $color-text-accent-on-light,
+  "button-background": $color-background-button-light,
+  "button-text": $color-text-on-button-light,
+  "overlay-background": rgba(255, 255, 255, 0.95),
+  "shadow-color": rgba(4, 19, 37, 0.12),
+  "shadow-color-strong": rgba(4, 19, 37, 0.2),
+  "info-callout-bg": rgba(4, 19, 37, 0.06),
+  "info-callout-border": rgba(4, 19, 37, 0.12),
+  "quote-accent": $color-text-primary-on-light,
+  "mobile-menu-border": rgba(4, 19, 37, 0.1),
+);
+
 // Gradient (presentational; spec composite type = stops + positions)
 // $description: Brand gradient for hero/sections; define stop colors as tokens
 // for single source of truth if needed.

@@ -1,5 +1,22 @@
 @use "variables" as *;
 
+// =============================================================================
+// THEME — CSS custom properties (from _variables theme maps)
+// =============================================================================
+
+:root,
+[data-theme="dark"] {
+  @each $key, $value in $theme-dark {
+    --color-#{$key}: #{$value};
+  }
+}
+
+[data-theme="light"] {
+  @each $key, $value in $theme-light {
+    --color-#{$key}: #{$value};
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +29,16 @@ html {
 
 body {
   font-family: $typography-family-body-default;
-  background-color: $color-background-page-dark;
-  color: $color-text-primary-on-dark;
+  background-color: var(--color-background-page);
+  color: var(--color-text-primary);
   line-height: baseline-line-height(16, 1.5);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   @if $baseline-debug {
     background-image: linear-gradient(
       to bottom,
-      rgba(255, 0, 0, 0.12) 1px,
+      rgba(255, 0, 0, 0.5) 1px,
       transparent 1px
     );
     background-size: 100% $baseline-grid;
@@ -97,24 +117,22 @@ img {
   right: 0;
   bottom: 0;
   backdrop-filter: blur(10px);
-  background: linear-gradient(
-    to bottom,
-    $color-background-page-dark-50 0%,
-    $color-background-page-dark-50 50%,
-    $color-background-page-dark-50 70%,
-    transparent 100%
-  );
+
   z-index: -1;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
   padding: 24px;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+
+  .navigation {
+    margin-left: auto;
+  }
 }
 
 .logo p {
@@ -122,7 +140,7 @@ img {
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-medium-default;
   line-height: baseline-line-height(18);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   white-space: nowrap;
 }
 
@@ -132,12 +150,48 @@ img {
   gap: 24px;
 }
 
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border-radius: 8px;
+  color: var(--color-text-primary);
+  opacity: 0.9;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+}
+.theme-toggle:hover {
+  opacity: 1;
+  background: var(--color-info-callout-bg);
+}
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+.theme-toggle .icon-sun {
+  display: none;
+}
+.theme-toggle .icon-moon {
+  display: block;
+}
+[data-theme="light"] .theme-toggle .icon-sun {
+  display: block;
+}
+[data-theme="light"] .theme-toggle .icon-moon {
+  display: none;
+}
+
 .nav-link {
   font-family: $typography-family-display-default;
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-medium-default;
   line-height: baseline-line-height(18);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   white-space: nowrap;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -180,7 +234,7 @@ img {
   /* identical to box height, or 72px */
   display: flex;
   align-items: center;
-  color: $color-text-accent-on-dark;
+  color: var(--color-text-accent);
 }
 
 .hero-subtitle {
@@ -188,7 +242,7 @@ img {
   font-size: 20px;
   font-weight: 300;
   line-height: baseline-line-height(20, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
 }
 
 .projects-section {
@@ -209,7 +263,7 @@ img {
   font-size: 24px;
   font-weight: 750;
   line-height: baseline-line-height(24, 1.4);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   max-width: 976px;
 }
 
@@ -266,11 +320,7 @@ img {
   font-weight: $typography-weight-medium-default;
   line-height: baseline-line-height(40, 1.1);
   letter-spacing: $typography-letterspacing-tight;
-  // background: linear-gradient(55.2998deg, rgb(138, 236, 221) 0.75995%, rgb(91, 230, 235) 11.787%, rgb(0, 222, 252) 22.813%, rgb(0, 213, 255) 33.84%, rgb(0, 201, 255) 44.867%, rgb(45, 185, 255) 55.893%, rgb(123, 166, 255) 66.92%, rgb(179, 141, 255) 77.947%, rgb(223, 111, 244) 88.973%, rgb(255, 71, 203) 100%);
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
 }
 
 .project-title-link {
@@ -291,7 +341,7 @@ img {
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-regular-default;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   opacity: 0.8;
 }
 
@@ -300,7 +350,7 @@ img {
   font-size: $typography-size-body-default;
   font-weight: 400;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
 }
 .read-more:hover {
   opacity: 0.8;
@@ -312,16 +362,20 @@ img {
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-semibold-default;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-light;
-  background-color: $color-background-button-default;
+  color: var(--color-button-text);
+  background-color: var(--color-button-background);
   text-decoration: none;
   border: none;
   border-radius: 9999px;
   text-align: center;
-  transition: opacity 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
   width: fit-content;
   padding: 6px 14px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px var(--color-shadow-color);
+  letter-spacing: $typography-letterspacing-tight;
 }
 .read-more-button:hover {
   opacity: 0.9;
@@ -356,7 +410,7 @@ img {
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   flex: 1;
   max-width: 478px;
 }
@@ -376,7 +430,7 @@ img {
   height: auto;
   aspect-ratio: 16/9;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px var(--color-shadow-color);
 }
 
 .project-detail {
@@ -394,7 +448,7 @@ img {
 }
 
 .back-link {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .back-button {
@@ -402,7 +456,7 @@ img {
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
   line-height: baseline-line-height(18, 1.2);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s ease;
@@ -427,7 +481,7 @@ img {
   font-size: $typography-size-section-title;
   font-weight: $typography-weight-regular-default;
   line-height: baseline-line-height(24, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
 }
 
 .project-content {
@@ -443,7 +497,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px var(--color-shadow-color);
 }
 
 .project-details {
@@ -457,7 +511,7 @@ img {
   font-size: $typography-size-heading-medium;
   font-weight: $typography-weight-semibold-default;
   line-height: baseline-line-height(28, 1.1);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   margin-bottom: 32px;
   margin-top: 96px;
 }
@@ -467,7 +521,7 @@ img {
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   margin-bottom: 24px;
   opacity: 0.8;
 }
@@ -484,7 +538,7 @@ img {
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   margin-bottom: 24px;
   padding-left: 24px;
   opacity: 0.8;
@@ -505,7 +559,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px var(--color-shadow-color);
   cursor: pointer;
 }
 .project-image .detail {
@@ -548,7 +602,7 @@ img {
     height: auto;
     object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 40px var(--color-shadow-color-strong);
   }
   img.hidden,
   video.hidden {
@@ -567,7 +621,7 @@ img {
   justify-content: center;
   font-size: 28px;
   line-height: 1;
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   mix-blend-mode: difference;
   background: rgba(255, 255, 255, 0.15);
   border: none;
@@ -588,19 +642,19 @@ img {
   height: auto;
   aspect-ratio: 16/9;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px var(--color-shadow-color);
   border: none;
 }
 .project-video video {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px var(--color-shadow-color);
 }
 
 .info-callout {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--color-info-callout-bg);
+  border: 1px solid var(--color-info-callout-border);
   border-radius: 16px;
   padding: 16px;
   margin: 32px 0;
@@ -611,7 +665,7 @@ img {
   font-size: 18px;
   font-weight: $typography-weight-regular-default;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
 }
 .info-callout p a {
   color: inherit;
@@ -633,14 +687,14 @@ img {
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: $color-text-primary-on-dark;
+  background-color: var(--color-quote-accent);
 }
 .quote-container p {
   font-family: $typography-family-body-default;
   font-size: 18px;
   font-weight: 400;
   line-height: baseline-line-height(18, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   margin-bottom: 16px;
 }
 .quote-container p:last-child {
@@ -678,7 +732,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: baseline-line-height(18, 1.2);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   opacity: 0.6;
   margin-bottom: 4px;
 }
@@ -688,7 +742,7 @@ img {
   font-size: 28px;
   font-weight: 750;
   line-height: baseline-line-height(28, 1.12);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
 }
 
 .hamburger-menu {
@@ -706,7 +760,7 @@ img {
 .hamburger-menu .hamburger-line {
   width: 100%;
   height: 2px;
-  background-color: $color-text-primary-on-dark;
+  background-color: var(--color-text-primary);
   border-radius: 1px;
   transition: all 0.3s ease;
 }
@@ -722,7 +776,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(9, 28, 78, 0.85);
+  background: var(--color-overlay-background);
   backdrop-filter: blur(8px);
   z-index: 1000;
   opacity: 0;
@@ -755,20 +809,20 @@ img {
   align-items: center;
   margin-bottom: 48px;
   padding-bottom: 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--color-mobile-menu-border);
 }
 .mobile-menu-header .logo p {
   margin: 0;
   font-family: $typography-family-display-default;
   font-size: $typography-size-body-default;
   font-weight: $typography-weight-medium-default;
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
 }
 
 .close-menu {
   background: transparent;
   border: none;
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   font-size: 32px;
   line-height: 1;
   cursor: pointer;
@@ -795,7 +849,7 @@ img {
   font-size: $typography-size-body-large;
   font-weight: $typography-weight-medium-default;
   line-height: baseline-line-height(20, 1.5);
-  color: $color-text-primary-on-dark;
+  color: var(--color-text-primary);
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
