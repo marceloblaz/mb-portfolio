@@ -133,6 +133,13 @@ img {
   .navigation {
     margin-left: auto;
   }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+  }
 }
 
 .logo p {
@@ -841,7 +848,7 @@ img {
 .mobile-navigation {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 1rem;
 }
 
 .mobile-nav-link {
