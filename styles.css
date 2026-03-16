@@ -377,7 +377,7 @@ img {
   display: inline-block;
   font-family: "Switzer", sans-serif;
   font-size: 1.125rem;
-  font-weight: 750;
+  font-weight: 500;
   line-height: 1.5555555556;
   color: var(--color-button-text);
   background-color: var(--color-button-background);
@@ -542,6 +542,12 @@ img {
   color: var(--color-text-primary);
   margin-bottom: 24px;
   opacity: 0.8;
+}
+
+.project-details i {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .project-details p a {

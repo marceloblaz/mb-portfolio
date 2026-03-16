@@ -367,7 +367,7 @@ img {
   display: inline-block;
   font-family: $typography-family-body-default;
   font-size: $typography-size-body-default;
-  font-weight: $typography-weight-semibold-default;
+  font-weight: $typography-weight-medium-default;
   line-height: baseline-line-height(18, 1.5);
   color: var(--color-button-text);
   background-color: var(--color-button-background);
@@ -531,6 +531,11 @@ img {
   color: var(--color-text-primary);
   margin-bottom: 24px;
   opacity: 0.8;
+}
+.project-details i {
+  font-size: 18px;
+  font-weight: $typography-weight-regular-default;
+  font-style: italic;
 }
 .project-details p a {
   color: inherit;
