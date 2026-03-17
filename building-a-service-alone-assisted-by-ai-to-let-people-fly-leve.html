@@ -140,10 +140,12 @@
                 Fly Leve
               </h1>
               <p class="project-detail-subtitle">
-                Leve is a clothing rental service for Brazilian travelers who
-                want to fly without a suitcase. I built it as a solo founder and
-                designer, using AI throughout as a thinking partner that let me
-                move faster and go deeper than I could have alone.
+                Leve is a clothing rental service for travelers who want to fly
+                without a suitcase — pick exactly what you need, collect it from
+                an airport locker on arrival, drop it in a bin before you leave.
+                I designed it as a solo founder, using AI as a thinking partner
+                throughout: to go deeper, move faster, and build something more
+                considered than I could have alone.
               </p>
             </div>
           </div>
@@ -186,71 +188,34 @@
                 />
               </div>
 
-              <h2>The Role of AI</h2>
-              <p>
-                Leve is a concept-stage product, which meant I had to
-                simultaneously think like a founder, an operator, and a designer
-                — often in the same afternoon. I used AI as a collaborator
-                across every phase.
-              </p>
-              <p>
-                During discovery, I used it to pressure-test assumptions: what
-                operational dependencies would make or break a laundry logistics
-                network? Where does clothing rental already exist in Brazil, and
-                what made those services work? AI helped me move through domain
-                research — airport real estate, RFID inventory systems,
-                industrial laundry SLAs — without losing weeks to background
-                reading.
-              </p>
-              <p>
-                During the service design phase, I used AI to co-develop and
-                stress-test the pricing and deposit model, running through
-                scenarios for customer behavior (what happens when 20% of
-                customers keep the items? what does that do to blended margin?)
-                before committing to a structure.
-              </p>
-              <p>
-                During the design process, I used AI to draft, challenge, and
-                refine the product narrative — including this case study. The
-                goal wasn't automation. It was compression: getting to a better
-                decision faster by having something to react to rather than
-                starting from blank.
-              </p>
-              <div class="info-callout">
-                <p>
-                  The result is a product that reflects genuine system thinking,
-                  not just a surface-level concept.
-                </p>
-              </div>
-
               <h2>Discovery</h2>
               <p>
-                Leve came from a frustration I kept running into: the weight of
-                a suitcase through an airport, the low-grade paranoia of keeping
-                it in sight, the baggage fee you didn't budget for. To make that
-                friction tangible in the business plan, I wrote a scenario — a
-                traveler who leaves his bag in an Uber trunk on the way to
-                Congonhas, São Paulo's busiest domestic airport, scrambles to
-                get it back, pays R$36 at check-in anyway, and lands to see an
-                ad that reads <em>"forget a suitcase."</em> The point wasn't
-                documentation. It was compression: one scene that makes the
-                problem feel inevitable rather than optional.
+                Leve came from a frustration I kept running into: the suitcase
+                you have to keep in sight at all times, the carry-on that may or
+                may not fit, the baggage fee that shows up at the worst moment.
+                We've grown used to services that removed friction entirely —
+                Uber made hailing a car invisible, Airbnb made finding a place
+                to stay effortless — but the airport experience itself remained
+                stubbornly stressful. Each inconvenience is minor on its own.
+                Together they make travel feel like logistics.
               </p>
               <p>
-                From there I mapped the traveler journey end to end — from
-                packing the night before to hotel check-in — identifying every
-                friction point where clothing was the cause. I looked at where
-                rental behavior already existed in Brazil to understand what
-                customers were culturally prepared for, and dug into the
-                operational dependencies that would make or break the service:
-                airport real estate, laundry logistics, inventory tracking.
+                That gap — between the frictionless services we already rely on
+                and the stubborn stress of airport travel — is where Leve lives.
+                I mapped the traveler journey end to end, from packing the night
+                before to hotel check-in, identifying every point where clothing
+                was the cause. I then looked at where rental behavior already
+                existed in Brazil to understand what customers were culturally
+                prepared for, and dug into the operational dependencies that
+                would make or break the service: airport real estate, laundry
+                logistics, inventory tracking.
               </p>
               <div class="quote-container">
                 <p>
-                  The sharpest insight wasn't about suitcases. It was about
-                  clothing itself: travelers on short business trips don't care
-                  what they wear as long as it's clean, fits, and looks
-                  reasonable. Fashion isn't the job. Removing a decision is.
+                  The central hypothesis is behavioral: frequent travelers will
+                  happily outsource their wardrobe if the experience is
+                  frictionless enough. Fashion is irrelevant. Convenience has to
+                  be total.
                 </p>
               </div>
               <div class="project-image">
@@ -273,8 +238,8 @@
                 pick exactly the items they need — but from a catalog tight
                 enough that the decision is never hard. Five item types, 2–3
                 neutral colors each, one brand. The constraint is the design:
-                enough variety to feel personal, few enough options to avoid the
-                paralysis that sinks most rental services.
+                enough variety to feel personal, few enough options to avoid
+                analysis paralysis.
               </p>
               <p>
                 <strong>Three pickup modes, one information model.</strong>
@@ -298,6 +263,17 @@
                 app — a direct answer to the most instinctive objection to
                 rental clothing, without requiring the customer to ask.
               </p>
+              <div class="info-callout">
+                <p>
+                  <strong>How I Built It</strong>. Claude and Notion — connected
+                  via MCP — for writing the business plan, diagrams, and product
+                  requirements. Pencil, Figma and Claude Code for UI concept
+                  design and rapid prototyping through MCP for prompt-to-design.
+                  The same principle that shaped the product — fewer decisions,
+                  tighter constraints, faster execution — shaped how it was
+                  built.
+                </p>
+              </div>
               <div class="project-image">
                 <img
                   src="images/project-details/im-building-a-service-alone-assisted-by-ai-to-let-people-fly-leve/im-building-a-service-alone-assisted-by-ai-to-let-people-fly-leve-03.png"
@@ -305,59 +281,18 @@
                 />
               </div>
 
-              <h2>Key Decisions</h2>
+              <h2>Front Stage and Back Stage</h2>
               <p>
-                <strong>Deposit-and-refund over penalty-on-loss.</strong> Early
-                versions of the return model led with damage fees and loss
-                penalties. Analogous services (car rentals, equipment rentals)
-                showed that penalty-forward framing increases anxiety without
-                improving return rates. The deposit model reframes it: you're
-                not risking a fine, you're recovering money you already paid.
-                For a service asking customers to adopt a new behavior, trust
-                architecture matters as much as interaction design.
-              </p>
-              <p>
-                <strong
-                  >À la carte as the default, kits as the shortcut.</strong
-                >
-                Curated kits seem like they reduce friction — fewer decisions,
-                faster checkout. But a traveler on a 3-day trip who needs two
-                shirts and one pair of pants is forced to over-rent or awkwardly
-                customize. À la carte with a tight catalog gives accuracy
-                without overwhelm. Kits stayed, but got demoted.
-              </p>
-              <p>
-                <strong>Smart lockers as the primary pickup surface.</strong>
-                Staffed counters have hours and cost money. Lockers are 24/7,
-                autonomous, and scalable — and a visible locker wall in a
-                high-traffic arrivals area is a permanent brand presence that a
-                small counter can't match. The kiosk layout was designed around
-                the lockers, not the other way around.
-              </p>
-
-              <h2>Interface Walkthrough</h2>
-              <p>
-                A returning customer books in under a minute. The app pre-fills
-                trip dates from calendar sync; their previous item selection is
-                one tap to reorder. They choose locker pickup, confirm, and
-                receive an SMS with locker number and passcode when their flight
-                lands.
-              </p>
-              <p>
-                At the airport, they bypass baggage claim entirely. Locker is in
-                arrivals, lit and labeled. Code works. Drawstring bag with their
-                items. They're in a cab in four minutes.
-              </p>
-              <p>
-                Three days later, they drop the bag in a marked bin in
-                departures — same motion as dropping a rental car key. No
-                counter, no form, no wait. Deposit refund arrives the next
-                morning with a discount code for the next trip.
-              </p>
-              <p>
-                For first-time customers, the app adds two steps: size input and
-                a brief explanation of the return model — both completed at
-                booking, not at the airport.
+                <strong>The customer app</strong> is what makes all of that
+                possible. A returning traveler opens Leve, sees their upcoming
+                flight detected from calendar sync, and reorders their previous
+                selection in one tap. A first-time user browses by category —
+                each item showing its cleaned date and rental count directly in
+                the catalog — builds their order, pays, and receives a locker
+                number and passcode before they land. Confirmation shows the
+                locker location, return deadline, and deposit amount. The entire
+                booking takes under two minutes. The operational complexity in
+                the dashboard is precisely what lets the app stay that simple.
               </p>
               <div class="project-image">
                 <img
@@ -365,33 +300,26 @@
                   alt="Leve app screens — home, item selection, bag review, and booking confirmation with locker code"
                 />
               </div>
-
-              <h2>Results</h2>
               <p>
-                Leve is pre-launch, in concept validation and seed fundraising
-                (R$2.4M target). The design work produced:
-              </p>
-              <ul>
-                <li>
-                  A complete service model with defined customer journey,
-                  pricing logic, and operational infrastructure
-                </li>
-                <li>
-                  A deposit-refund structure that turns non-returns into a
-                  65%-margin revenue stream
-                </li>
-                <li>
-                  A break-even model requiring less than 0.03% of Congonhas
-                  annual passenger volume
-                </li>
-                <li>
-                  A product narrative strong enough to anchor investor and
-                  partner conversations
-                </li>
-              </ul>
-              <p>
-                The next design challenge is the app itself — making a new
-                category of behavior feel obvious in the first 90 seconds.
+                <strong>The operations dashboard</strong> is where Leve's
+                complexity lives. A customer's two-minute booking triggers a
+                chain of back-end coordination that the app never exposes:
+                locker assignment, inventory reservation, and — once a flight
+                lands — an automated passcode sent to the customer's phone.
+                Staff see all of this in real time: incoming flights grouped
+                with their attached bookings, each showing preparation status,
+                assigned locker number, and expected arrival time. When a flight
+                lands early, the system flags it. Opening a booking reveals a
+                per-item checklist — every garment tracked by RFID, with its
+                cleaned date and rental count — that staff work through before
+                marking an order ready. Returns follow the same logic in
+                reverse: drop bin to RFID scan to laundry prep, with deposit
+                refunds processed automatically within 24 hours. Twice a day, a
+                laundry courier collects returns and restocks clean items; the
+                dashboard tracks what's in circulation, what's being cleaned,
+                what's available, and which garments are approaching their
+                30-cycle retirement threshold. The staff's job is exception
+                handling. The system handles everything else.
               </p>
               <div class="project-image">
                 <img
@@ -400,12 +328,23 @@
                 />
               </div>
 
-              <div>
-                <i
-                  >Built with Claude as a design and strategy collaborator
-                  throughout.</i
-                >
-              </div>
+              <h2>Work in Progress</h2>
+              <p>
+                Leve is still at a conceptual stage. There's no launch data, no
+                retention curve whatsoever. What exists is a fully reasoned
+                service — customer journey, pricing model, operational
+                infrastructure, deposit logic, two designed interfaces — built
+                by one person across a few weeks. That pace was only possible
+                because of how I used AI throughout: to stress-test operational
+                assumptions, model pricing scenarios, draft and challenge the
+                product narrative, and push past the parts of the work that
+                would otherwise stall. The output is a comprehensive business
+                plan covering everything from financial projections to
+                operational logistics to product design, diagrams for major
+                processes, two interface concept mockups illustrating both sides
+                of the experience, and a branding concept. AI shortened the
+                distance between an idea and a considered position on it.
+              </p>
             </div>
           </div>
         </section>
