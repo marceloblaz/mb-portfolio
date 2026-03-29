@@ -73,5 +73,13 @@ pids
 *.bak
 *.backup
 
+# Uncompressed video covers (use *-compressed.mp4 versions instead)
+images/video-covers/*.mov
+images/video-covers/figma-plugin-cover.mp4
+images/video-covers/galley-cover.mp4
+images/video-covers/leve-cover.mp4
+images/video-covers/leve-cover-2.mp4
+images/video-covers/lightship-cover.mp4
+
 # OS generated files
 Icon? 
