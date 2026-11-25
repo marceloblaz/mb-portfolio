@@ -1,403 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      (function () {
-        const theme = localStorage.getItem("theme") || "dark";
-        document.documentElement.setAttribute("data-theme", theme);
-      })();
-    </script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-913PHPQ519"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-913PHPQ519");
-    </script>
-    <title>Marcelo Brasileiro - Senior Product Designer</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="gambarino.css" />
-    <link rel="stylesheet" href="switzer.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="home">
-      <!-- Header -->
-      <header class="header">
-        <div class="header-content">
-          <div class="logo">
-            <p>Marcelo Brasileiro</p>
-          </div>
-          <nav class="navigation">
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#about" class="nav-link">About me</a>
-            <a
-              href="https://www.linkedin.com/in/marceloblaz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="nav-link"
-              >Linkedin</a
-            >
-            <a href="mailto:marcelo.brasileiro@gmail.com" class="nav-link"
-              >Email</a
-            >
-          </nav>
-          <div class="header-actions">
-            <button
-              class="theme-toggle"
-              aria-label="Toggle light mode"
-              title="Toggle light mode"
-            >
-              <svg
-                class="icon-sun"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="4" />
-                <path
-                  d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
-                />
-              </svg>
-              <svg
-                class="icon-moon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-              </svg>
-            </button>
-            <button class="hamburger-menu" aria-label="Toggle navigation menu">
-              <span class="hamburger-line"></span>
-              <span class="hamburger-line"></span>
-              <span class="hamburger-line"></span>
-            </button>
-          </div>
-        </div>
-      </header>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marcelo Brasileiro — Senior Product Designer</title>
+<meta name="description" content="Marcelo Brasileiro, senior product designer. I follow a problem from the user’s pain to the shipped component.">
+<meta name="theme-color" content="#0a0a09">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro")</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-913PHPQ519"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-913PHPQ519");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
 
-      <!-- Mobile Menu Overlay -->
-      <div class="mobile-menu-overlay">
-        <div class="mobile-menu">
-          <div class="mobile-menu-header">
-            <div class="logo">
-              <p>Marcelo Brasileiro</p>
-            </div>
-            <button class="close-menu" aria-label="Close navigation menu">
-              ×
-            </button>
-          </div>
-          <nav class="mobile-navigation">
-            <a href="#projects" class="mobile-nav-link">Projects</a>
-            <a href="#about" class="mobile-nav-link">About me</a>
-            <a
-              href="https://www.linkedin.com/in/marceloblaz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mobile-nav-link"
-              >Linkedin</a
-            >
-            <a
-              href="mailto:marcelo.brasileiro@gmail.com"
-              class="mobile-nav-link"
-              >Email</a
-            >
-          </nav>
-        </div>
-      </div>
+<div class="pin" id="pin">
+<div class="lit" id="lit">
+<canvas id="light" aria-hidden="true"></canvas>
+<header class="wrap">
+  <div class="nav">
+    <a class="brand" href="#top">marcelo brasileiro</a>
+    <nav class="mono" aria-label="Main"><a href="#work">work</a><a href="#about">about</a><a href="#contact">contact</a></nav>
+  </div>
+</header>
+  <section class="wrap hero" id="top">
+    <div>
+      <h1 id="h1"><span class="w" data-d="1">Building</span> <span class="w" data-d="0">clarity</span> <span class="w" data-d="1">into</span> <span class="w" data-d="2">systems.</span></h1>
+      <p class="lede">Nothing lost in translation: I follow a problem from the user’s pain to the shipped component.</p>
+      <div class="cta"><a class="btn solid" href="#work">See the work →</a><a class="btn" href="#contact">Email me</a></div>
+    </div>
+  </section>
+</div>
+</div>
 
-      <div class="main-container">
-        <!-- Hero Section -->
-        <section class="hero-section">
-          <div class="hero-content">
-            <div class="text-container">
-              <h1 class="hero-title">
-                I’m a Senior Product Designer who solves complex problems
-                through creative, elegant solutions from 0→1.
-              </h1>
-            </div>
-          </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-          <div class="projects-content">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-container">
-              <!-- Galley -->
-              <article class="project-card">
-                <div class="project-image-preview">
-                  <video
-                    src="images/video-covers/galley-cover-compressed.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                  ></video>
-                </div>
-                <div class="project-info">
-                  <div class="project-description">
-                    <a
-                      href="designing-for-complexity-galleys-enterprise-menu-planner.html"
-                      class="project-title-link"
-                    >
-                      <h3 class="project-title">
-                        Designing for Complexity: Galley's Enterprise Menu
-                        Planner
-                      </h3>
-                    </a>
-                    <p class="project-text">
-                      Designed a flexible, data-driven menu planner that helps
-                      chefs save time, reduce errors, and scale their
-                      operations.
-                    </p>
-                  </div>
-                  <a
-                    href="designing-for-complexity-galleys-enterprise-menu-planner.html"
-                    class="read-more-button"
-                    >Read more</a
-                  >
-                </div>
-              </article>
-              <!-- Leve -->
-              <article class="project-card">
-                <div class="project-image-preview">
-                  <video
-                    src="images/video-covers/leve-cover-2-compressed.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                  ></video>
-                </div>
-                <div class="project-info">
-                  <div class="project-description">
-                    <a
-                      href="building-a-service-alone-assisted-by-ai-to-let-people-fly-leve.html"
-                      class="project-title-link"
-                    >
-                      <h3 class="project-title">
-                        I'm Building a Service Assisted by AI to Let People Fly
-                        Leve
-                      </h3>
-                    </a>
-                    <p class="project-text">
-                      Designing a clothing rental service for Brazilian
-                      travelers who want to fly without a suitcase — built solo,
-                      using AI as a thinking partner across every phase.
-                    </p>
-                  </div>
-                  <a
-                    href="building-a-service-alone-assisted-by-ai-to-let-people-fly-leve.html"
-                    class="read-more-button"
-                    >Read more</a
-                  >
-                </div>
-              </article>
-              <!-- Figma plugin -->
-              <article class="project-card">
-                <div class="project-image-preview">
-                  <video
-                    src="images/video-covers/figma-plugin-cover-compressed.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                  ></video>
-                </div>
-                <div class="project-info">
-                  <div class="project-description">
-                    <a
-                      href="creating-and-coding-a-figma-plugin-used-by-5k-designers.html"
-                      class="project-title-link"
-                    >
-                      <h3 class="project-title">
-                        Creating and Coding a Figma plugin used by 5.7k
-                        designers
-                      </h3>
-                    </a>
-                    <p class="project-text">
-                      A self-initiated project that turned a manual design task
-                      into a one-click solution — now helping thousands of Figma
-                      users.
-                    </p>
-                  </div>
-                  <a
-                    href="creating-and-coding-a-figma-plugin-used-by-5k-designers.html"
-                    class="read-more-button"
-                    >Read more</a
-                  >
-                </div>
-              </article>
-
-              <!-- Lightship -->
-              <article class="project-card">
-                <div class="project-image-preview">
-                  <video
-                    src="images/video-covers/lightship-cover-compressed.mp4"
-                    autoplay
-                    loop
-                    muted
-                    playsinline
-                  ></video>
-                </div>
-                <div class="project-info">
-                  <div class="project-description">
-                    <a
-                      href="redefining-the-RV-experience-with-at-ablet-first-interface.html"
-                      class="project-title-link"
-                    >
-                      <h3 class="project-title">
-                        Redefining the RV Experience with a Tablet-First
-                        Interface
-                      </h3>
-                    </a>
-                    <p class="project-text">
-                      Designing the central control panel for Lightship's
-                      revolutionary all-electric, aerodynamic RV — creating an
-                      intuitive interface for the future of travel.
-                    </p>
-                  </div>
-                  <a
-                    href="redefining-the-RV-experience-with-at-ablet-first-interface.html"
-                    class="read-more-button"
-                    >Read more</a
-                  >
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-          <div class="about-content">
-            <div class="content-container">
-              <h2 class="section-title">About me</h2>
-              <div class="main-content">
-                <div class="about-text">
-                  <p>
-                    In my 8 years of experience in Product Design I’ve worked
-                    across multiple contexts—financial institutions, agencies,
-                    and startups—always in close collaboration with
-                    cross-functional teams. I thrive in ambiguous environments
-                    by breaking down complexity and creating clarity around
-                    products.
-                  </p>
-
-                  <p>
-                    At Galley, I helped shape Menu Planner, a core module that
-                    enabled customers to cut planning time in half, freeing them
-                    to focus on crafting better menus.
-                  </p>
-                  <p>
-                    After experiencing the pain of setting proper line length in
-                    Figma, I built a plugin to solve it—reducing a typical
-                    1½-minute workflow to just 4 seconds. The plugin is now used
-                    by over 6,000 designers.
-                  </p>
-                  <p>
-                    I help teams build more intuitive products by shaping design
-                    systems, workflows, and user experiences. Let’s talk.
-                  </p>
-                </div>
-                <div class="about-video">
-                  <iframe
-                    width="1014"
-                    height="572"
-                    src="https://www.youtube.com/embed/HN9pGHM8MJ8"
-                    title="Marcelo Brasileiro introduction"
-                    frameborder="0"
-                    allow="
-                      accelerometer;
-                      autoplay;
-                      clipboard-write;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    "
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<div class="mpin" id="mpin">
+  <section class="msec" id="method" aria-label="How I work: one Galley object followed from the problem to the shipped view">
+    <div class="wrap mhead">
+      <div class="mrow">
+        <h2 class="mtitle">From problem to product.</h2>
+        <div class="om-bar"><nav class="om-crumbs mono" id="omCrumbs" aria-label="Map path"></nav></div>
       </div>
     </div>
+    <div class="wrap mbody"><div class="gwrap" id="gwrap"><div class="graph" id="graph"><div class="omap" id="omap"><div class="om-stage" id="omStage"></div></div></div></div></div>
+  </section>
+</div>
 
-    <script>
-      // Hamburger menu functionality
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
-      const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
-      const closeMenu = document.querySelector(".close-menu");
-      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+<main>
+  <section class="wrap sec" id="work">
+    <!-- #projects keeps the case study pages' "back to projects" links working -->
+    <span id="projects" aria-hidden="true"></span>
+    <div class="work" id="workgrid"></div>
+  </section>
 
-      // Open menu
-      hamburgerMenu.addEventListener("click", () => {
-        mobileMenuOverlay.classList.add("active");
-        document.body.style.overflow = "hidden"; // Prevent scrolling
-      });
+  <section class="wrap sec contact" id="about">
+    <div>
+      <h2>Have a complex product to untangle? Let’s talk.</h2>
+      <div class="bio">
+        <p>I’m Marcelo, a senior product designer based in Brazil, with about eight years of 0→1 products and complex enterprise workflows.</p>
+        <p>Today I’m at Digibee, designing AI-native products for an integration platform and owning its design system. Before that I was the founding designer at Galley, where I built the Menu Planner end to end.</p>
+        <p>I work like a design engineer: between design, product and engineering, and close enough to the code to ship it.</p>
+      </div>
+      <div class="cta" id="contact"><a class="btn solid" href="mailto:marcelo.brasileiro@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/marcelobrasileiro-pd" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+      <p class="mail mono">marcelo.brasileiro@gmail.com</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span class="brand">marcelo brasileiro</span><small>© 2026</small></div></footer>
 
-      // Close menu
-      closeMenu.addEventListener("click", () => {
-        mobileMenuOverlay.classList.remove("active");
-        document.body.style.overflow = ""; // Restore scrolling
-      });
-
-      // Close menu when clicking overlay
-      mobileMenuOverlay.addEventListener("click", (e) => {
-        if (e.target === mobileMenuOverlay) {
-          mobileMenuOverlay.classList.remove("active");
-          document.body.style.overflow = "";
-        }
-      });
-
-      // Close menu when clicking nav links
-      mobileNavLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenuOverlay.classList.remove("active");
-          document.body.style.overflow = "";
-        });
-      });
-
-      // Close menu on escape key
-      document.addEventListener("keydown", (e) => {
-        if (
-          e.key === "Escape" &&
-          mobileMenuOverlay.classList.contains("active")
-        ) {
-          mobileMenuOverlay.classList.remove("active");
-          document.body.style.overflow = "";
-        }
-      });
-
-      // Theme toggle
-      const themeToggle = document.querySelector(".theme-toggle");
-      themeToggle.addEventListener("click", () => {
-        const html = document.documentElement;
-        const current = html.getAttribute("data-theme") || "dark";
-        const next = current === "dark" ? "light" : "dark";
-        html.setAttribute("data-theme", next);
-        localStorage.setItem("theme", next);
-      });
-    </script>
-    <script src="telemetry.js"></script>
-  </body>
+<script src="js/main.js"></script>
+<script src="telemetry.js"></script>
+</body>
 </html>
